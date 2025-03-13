@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Caroline Magri - Psychologue et Sophrologue",
-  description: "Cabinet de psychologie et sophrologie à Caen. Accompagnement psychologique, sophrologie et bilan psychologique.",
+  description: "Cabinet de psychologie et sophrologie à Pinsaguel. Accompagnement psychologique, sophrologie et bilan psychologique.",
 };
 
 export default function RootLayout({
