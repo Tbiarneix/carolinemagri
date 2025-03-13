@@ -1,0 +1,40 @@
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+import styles from './Navigation.module.css';
+
+export const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className={styles.nav} role="navigation" aria-label="Menu principal">
+      <div className={styles.logo}>
+        <Link href="/" aria-label="Accueil">
+          Caroline Magri
+        </Link>
+      </div>
+
+      <button 
+        className={styles.menuButton} 
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls="mainMenu"
+        aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+      >
+        <span className={styles.menuIcon}></span>
+      </button>
+
+      <ul 
+        id="mainMenu" 
+        className={`${styles.menuItems} ${isOpen ? styles.open : ''}`}
+      >
+        <li><Link href="/psychologie">La Psychologie</Link></li>
+        <li><Link href="/sophrologie">La Sophrologie</Link></li>
+        <li><Link href="/bilan">Bilan psychologique</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+        <li> <Link href="/contact" className={styles.button}>Prendre rendez-vous</Link></li>
+      </ul>
+    </nav>
+  );
+}
