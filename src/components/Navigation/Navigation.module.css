@@ -36,7 +36,7 @@
 
 .menuItems a:hover {
   color: #fff;
-  background-color: #75c79a;
+  background-color: var(--pastel-dark);
   outline: none;
 }
 
@@ -52,7 +52,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: #75c79a;
+  background-color: var(--pastel-dark);
   position: relative;
   transition: background-color 0.3s;
 }
@@ -63,7 +63,7 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background-color: #75c79a;
+  background-color: var(--pastel-dark);
   transition: transform 0.3s;
 }
 
@@ -86,11 +86,17 @@
   text-decoration: none;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   color: var(--pastel-dark);
-  background-color: var(--pastel-light);
+  background-color: var(--pastel-extralight);
+  border: 1px solid var(--pastel-dark);
   transform: translateY(-2px);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--pastel-dark);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .open {

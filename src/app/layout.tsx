@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation/Navigation";
-import { luciole } from "@/font/custom-font";
+import { Footer } from "@/components/Footer/Footer";
+import { AtkinsonHyperlegible } from "@/font/custom-font";
 
 export const metadata: Metadata = {
   title: "Caroline Magri - Psychologue et Sophrologue",
@@ -15,11 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={luciole.className}>
+      <body className={AtkinsonHyperlegible.className}>
         <Navigation />
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styles from './Navigation.module.css';
 import Image from 'next/image';
+import { Cta } from '../CTA/Cta';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,17 +14,11 @@ export const Navigation = () => {
       <div className={styles.logo}>
         <Link href="/" aria-label="Accueil">
           <Image
-            src="/images/logo-draw.png"
-            alt="Logo de Caroline Magri"
-            width={127}
-            height={50}
-          />
-          {/* <Image
             src="/images/logo-text-bicolor.png"
             alt="Logo de Caroline Magri"
-            width={336}
-            height={123}
-          /> */}
+            width={136}
+            height={50}
+          />
         </Link>
       </div>
 
@@ -44,9 +39,10 @@ export const Navigation = () => {
         <li><Link href="/psychologie">La Psychologie</Link></li>
         <li><Link href="/sophrologie">La Sophrologie</Link></li>
         <li><Link href="/bilan">Bilan psychologique</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
+        <li><Link href="/cpim">CPIM</Link></li>
+        <li><Link href="/honoraires-et-contact">Honoraires et contact</Link></li>
       </ul>
-      <Link href="/contact" className={styles.button}>Prendre rendez-vous</Link>
+      <Cta />
     </nav>
   );
 }

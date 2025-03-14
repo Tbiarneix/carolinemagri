@@ -1,8 +1,9 @@
 :root {
   --primary: #75c79a;
-  --pastel-light: #95D5B2;
-  --pastel-medium: #52B788;
-  --pastel-dark: #1B4332;
+  --pastel-extralight: #e1f0e6;
+  --pastel-light: #a4d1ba;
+  --pastel-medium: #83b5aa;
+  --pastel-dark: #386c5f;
   --text: #333333;
   --text-light: #666666;
   --background: #ffffff;
@@ -65,7 +66,7 @@ h2::after {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: var(--primary);
+  background-color: var(--pastel-medium);
   border-radius: 2px;
 }
 

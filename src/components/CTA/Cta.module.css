@@ -1,21 +1,27 @@
-.cta {
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
   .button {
     display: inline-block;
+
     padding: 1rem 2rem;
-    background-color: var(--primary);
-    color: white;
+   
+    border: 1px solid transparent;
     border-radius: 30px;
+    background-color: var(--pastel-dark);
+   
+    color: white;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
   }
   
-  .button:hover,
-  .button:focus {
-    background-color: var(--pastel-dark);
+  .button:hover {
+    color: var(--pastel-dark);
+    background-color: var(--pastel-extralight);
+    border: 1px solid var(--pastel-dark);
     transform: translateY(-2px);
+  }
+  
+  .button:focus-visible {
+    outline: 3px solid var(--pastel-dark);
+    outline-offset: 2px;
+    border-radius: 30px;
   }

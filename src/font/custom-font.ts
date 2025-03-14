@@ -1,24 +1,24 @@
 import localFont from "next/font/local";
 
-export const luciole = localFont({
+export const AtkinsonHyperlegible = localFont({
     src: [
       {
-        path: './Luciole-Regular.ttf',
+        path: './Atkinson-Hyperlegible-Regular.ttf',
         weight: '400',
         style: 'normal',
       },
       {
-        path: './Luciole-Regular-Italic.ttf',
+        path: './Atkinson-Hyperlegible-Italic.ttf',
         weight: '400',
         style: 'italic',
       },
       {
-        path: './Luciole-Bold.ttf',
+        path: './Atkinson-Hyperlegible-Bold.ttf',
         weight: '700',
         style: 'normal',
       },
       {
-        path: './Luciole-Bold-Italic.ttf',
+        path: './Atkinson-Hyperlegible-BoldItalic.ttf',
         weight: '700',
         style: 'italic',
       },
