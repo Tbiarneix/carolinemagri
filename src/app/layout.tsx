@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation/Navigation";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
+import { luciole } from "@/font/custom-font";
 
 export const metadata: Metadata = {
   title: "Caroline Magri - Psychologue et Sophrologue",
@@ -19,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={luciole.className}>
         <Navigation />
         <main>
           {children}
