@@ -1,19 +1,20 @@
 .nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  
   width: 100%;
-  top: 0;
-  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .logo a {
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .menuItems {
@@ -52,7 +53,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--pastel-dark);
+  background-color: var(--pastel-medium);
   position: relative;
   transition: background-color 0.3s;
 }
@@ -63,7 +64,7 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  background-color: var(--pastel-dark);
+  background-color: var(--pastel-medium);
   transition: transform 0.3s;
 }
 
@@ -75,39 +76,31 @@
   bottom: -6px;
 }
 
-.button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--pastel-dark);
-  color: white;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.button:hover {
-  color: var(--pastel-dark);
-  background-color: var(--pastel-extralight);
-  border: 1px solid var(--pastel-dark);
-  transform: translateY(-2px);
-}
-
-.button:focus-visible {
-  outline: 3px solid var(--pastel-dark);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
 .open {
   color: #fff;
   background-color: #75c79a;
   outline: none;
 }
 
-@media (max-width: 768px) {
+.inMenuCta {
+  display: none;
+}
+
+.outMenuCta {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    padding: 0.5rem 2rem;
+  }
+
   .menuButton {
     display: block;
+  }
+
+  .menuButton:focus-visible {
+    outline-offset: 0.7rem;
   }
 
   .menuItems {
@@ -125,6 +118,8 @@
 
   .menuItems.open {
     display: flex;
+
+    height: calc(100svh - 3.5rem);
   }
 
   .menuItems li {
@@ -135,5 +130,13 @@
   .menuItems a {
     display: block;
     padding: 0.75rem;
+  }
+
+  .inMenuCta {
+    display: block;
+  }
+  
+  .outMenuCta {
+    display: none;
   }
 }

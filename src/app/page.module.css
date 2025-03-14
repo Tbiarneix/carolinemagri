@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 2rem;
+  padding: 8rem 2rem 6rem;
 
   position: relative;
   overflow: hidden;
@@ -37,7 +37,7 @@
 .discovery {
   padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   
   background: var(--pastel-light);
   border-radius: 12px;

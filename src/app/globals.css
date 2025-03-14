@@ -11,13 +11,6 @@
   --background-linear: linear-gradient(45deg, rgba(117, 199, 154, 0.1), rgba(117, 199, 154, 0.05)); ;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ffffff;
-    --text: #0a0a0a;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -100,24 +93,13 @@ a {
   border: 0;
 }
 
-:focus {
-  outline: 3px solid var(--pastel-dark);
-  outline-offset: 2px;
-}
-
 :focus:not(:focus-visible) {
   outline: none;
 }
 
 :focus-visible, a:focus-visible {
-  outline: 3px solid var(--pastel-dark);
+  outline: 3px solid var(--pastel-dark) !important;
   outline-offset: 2px;
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
-  }
 }
 
 @media (max-width: 768px) {

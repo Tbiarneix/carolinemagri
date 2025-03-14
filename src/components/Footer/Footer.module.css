@@ -87,10 +87,32 @@ a:focus-visible {
   .leftSection, .rightSection {
     text-align: center;
   }
+
+  .leftSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+  }
   
   .siteMap {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .leftSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .rightSection {
+    flex-direction: column;
+    gap: 2rem;
   }
 }

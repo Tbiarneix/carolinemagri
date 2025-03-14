@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className={styles.leftSection}>
           <Image
             src="/images/logo-full.png"
-            alt="Logo de Caroline Magri, psychologue et sophrologue à Pinsaguel"
+            alt=""
             width={250}
             height={165}
           />
