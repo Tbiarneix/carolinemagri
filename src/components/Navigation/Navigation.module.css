@@ -11,20 +11,9 @@
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
 .logo a {
-  color: #75c79a;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.logo a:hover {
-  color: #5ba980;
-  text-decoration: underline;
 }
 
 .menuItems {
@@ -89,7 +78,7 @@
 .button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: var(--primary);
+  background-color: var(--pastel-dark);
   color: white;
   border-radius: 30px;
   font-size: 1.1rem;
@@ -99,7 +88,8 @@
 
 .button:hover,
 .button:focus {
-  background-color: var(--primary-dark);
+  color: var(--pastel-dark);
+  background-color: var(--pastel-light);
   transform: translateY(-2px);
 }
 

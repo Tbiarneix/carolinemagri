@@ -29,18 +29,20 @@
   .hero__subtitle {
     display: block;
     font-size: 2rem;
-    color: var(--primary-dark);
+    color: var(--pastel-dark);
     margin-top: 0.5rem;
   }
 }
 
 .discovery {
   padding: 2rem;
-
-  background: linear-gradient(45deg, rgba(117, 199, 154, 0.1), rgba(117, 199, 154, 0.05));
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  background: var(--pastel-light);
+  border-radius: 12px;
 
   h2 {
-    max-width: 1200px;
     margin: auto;
   }
 

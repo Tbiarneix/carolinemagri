@@ -1,6 +1,8 @@
 :root {
   --primary: #75c79a;
-  --primary-dark: #498665;
+  --pastel-light: #95D5B2;
+  --pastel-medium: #52B788;
+  --pastel-dark: #1B4332;
   --text: #333333;
   --text-light: #666666;
   --background: #ffffff;
@@ -75,10 +77,12 @@ h3 {
 
 p {
   margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 a {
-  color: inherit;
+  color: var(--pastel-dark);
   text-decoration: none;
 }
 
@@ -96,7 +100,7 @@ a {
 }
 
 :focus {
-  outline: 3px solid var(--primary-dark);
+  outline: 3px solid var(--pastel-dark);
   outline-offset: 2px;
 }
 
@@ -105,7 +109,7 @@ a {
 }
 
 :focus-visible, a:focus-visible {
-  outline: 3px solid var(--primary-dark);
+  outline: 3px solid var(--pastel-dark);
   outline-offset: 2px;
 }
 

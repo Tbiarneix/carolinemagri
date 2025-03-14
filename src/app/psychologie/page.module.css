@@ -163,7 +163,7 @@
 
 .button:hover,
 .button:focus {
-  background-color: var(--primary-dark);
+  background-color: var(--pastel-dark);
   transform: translateY(-2px);
 }
 
