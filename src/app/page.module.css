@@ -13,19 +13,19 @@
     max-width: 1200px;
     margin-top: 2rem;
   }
-  
+
   .hero__presentation {
     display: flex;
     justify-content: center;
-  
+
     gap: 2rem;
     margin-bottom: 2rem;
   }
-  
+
   .hero__presentation * {
     flex: 1;
   }
-  
+
   .hero__subtitle {
     display: block;
     font-size: 2rem;
@@ -38,7 +38,7 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto 3rem;
-  
+
   background: var(--pastel-light);
   border-radius: 12px;
 
@@ -64,45 +64,8 @@
   }
 
   .discovery__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex: 1;
-
-    padding: 1.5rem;
-    border: 1px solid var(--pastel-dark);
-    border-radius: 12px;
-  
-    text-align: center;
     cursor: pointer;
-    background: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .discovery__item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(117, 199, 154, 0.1);
-  }
-
-  .discovery__item:hover .image {
-    transform: scale(1.05);
-  }
-
-  .discovery__imageContainer {
-    object-fit: cover;
-    overflow: hidden;
-  
-    border-radius: 8px;
-    
-    background: var(--background);
-  }
-  
-  .discovery__image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
   }
 }
 
@@ -115,19 +78,20 @@
   }
 
   .professional__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    display: flex;
+    flex-direction: row;
+
     max-width: 1200px;
     margin: 0 auto;
     gap: 4rem;
   }
 
   .professional__column {
+    flex: 1;
     padding: 1.5rem;
     border: 1px solid #777777;
     border-radius: 12px;
-    
+
     background: var(--background-linear);
   }
 }
@@ -137,12 +101,11 @@
     flex-direction: column;
 
     padding: 0 2rem;
-    
+
     .hero__presentation {
       flex-direction: column;
     }
   }
-
 
   .title {
     font-size: 2.5rem;
@@ -165,5 +128,28 @@
 
   .subtitle {
     font-size: 1.25rem;
+  }
+
+  .discovery {
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .professional {
+    padding: 1rem 0.5rem;
+
+    h2 {
+      max-width: 1200px;
+      margin: 0 auto 1rem;
+    }
+
+    .professional__content {
+      flex-direction: column;
+    }
+
+    .professional__column {
+      padding: 1rem 0.8rem;
+    }
   }
 }

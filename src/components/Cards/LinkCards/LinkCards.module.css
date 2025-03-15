@@ -1,0 +1,49 @@
+.linkCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    padding: 1.5rem;
+    border: 1px solid var(--pastel-dark);
+    border-radius: 12px;
+
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .linkCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(117, 199, 154, 0.1);
+  }
+
+  .linkCard:hover .image {
+    transform: scale(1.05);
+  }
+
+  .linkCard.dark {
+    background: var(--pastel-light);
+  }
+
+  .linkCard.light {
+    background: #fff;
+  }
+
+.imageContainer {
+    object-fit: cover;
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: var(--background);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }

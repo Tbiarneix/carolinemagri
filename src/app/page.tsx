@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
+import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
 
 export default function Home() {
   return (
@@ -29,60 +30,48 @@ export default function Home() {
         <h2>Découvrir</h2>
         <ul className={styles.discovery__container}>
           <li className={styles.discovery__item} tabIndex={0} aria-label="La Psychologie" role="link">
-            <Link href="/psychologie" tabIndex={-1}>
-              <h3>La Psychologie</h3>
-              <div className={styles.discovery__imageContainer}>
-                <Image
-                  src="/images/adultes.jpg"
-                  alt=""
-                  width={300}
-                  height={300}
-                  className={styles.discovery__image}
-                />
-              </div>
-            </Link>
+            <LinkCards
+              theme={Theme.Light}
+              href="/psychologie"
+              title="La Psychologie"
+              imgSrc="/images/adultes.jpg"
+              width={300}
+              height={250}
+              alt=""
+            />
           </li>
           <li className={styles.discovery__item} tabIndex={0} aria-label="La Sophrologie" role="link">
-            <Link href="/sophrologie" tabIndex={-1}>
-              <h3>La Sophrologie</h3>
-              <div className={styles.discovery__imageContainer}>
-              <Image
-                  src="/images/adultes.jpg"
-                  alt=""
-                  width={300}
-                  height={300}
-                  className={styles.discovery__image}
-                />
-              </div>
-            </Link>
+            <LinkCards
+              theme={Theme.Light}
+              href="/sophrologie"
+              title="La Sophrologie"
+              imgSrc="/images/adultes.jpg"
+              width={300}
+              height={250}
+              alt=""
+            />
           </li>
           <li className={styles.discovery__item} tabIndex={0} aria-label="Bilan Psychologique" role="link">
-            <Link href="/bilan" tabIndex={-1}>
-              <h3>Bilan Psychologique</h3>
-              <div className={styles.discovery__imageContainer}>
-                <Image
-                  src="/images/adultes.jpg"
-                  alt=""
-                  width={300}
-                  height={300}
-                  className={styles.discovery__image}
-              />
-            </div>
-            </Link>
+            <LinkCards
+              theme={Theme.Light}
+              href="/bilan"
+              title="Bilans"
+              imgSrc="/images/adultes.jpg"
+              width={300}
+              height={250}
+              alt=""
+            />
           </li>
           <li className={styles.discovery__item} tabIndex={0} aria-label="Contact" role="link">
-            <Link href='#contact' tabIndex={-1}>
-              <h3>Contact</h3>
-              <div className={styles.discovery__imageContainer}>
-              <Image
-                  src="/images/adultes.jpg"
-                  alt=""
-                  width={300}
-                  height={275}
-                  className={styles.discovery__image}
-                />
-              </div>
-            </Link>
+            <LinkCards
+              theme={Theme.Light}
+              href="/honoraires-et-contact"
+              title="Contact"
+              imgSrc="/images/adultes.jpg"
+              width={300}
+              height={250}
+              alt=""
+            />
           </li>
         </ul>
       </section>
