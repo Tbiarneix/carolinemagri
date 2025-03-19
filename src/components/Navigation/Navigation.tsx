@@ -1,58 +1,63 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useEffect, useState, useRef, useCallback } from 'react';
-import styles from './Navigation.module.css';
-import Image from 'next/image';
-import { Cta } from '../CTA/Cta';
+import Link from "next/link";
+import { useEffect, useState, useRef, useCallback } from "react";
+import styles from "./Navigation.module.css";
+import Image from "next/image";
+import { Cta } from "../CTA/Cta";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [ariaLabel, setAriaLabel] = useState('Ouvrir le menu');
+  const [ariaLabel, setAriaLabel] = useState("Ouvrir le menu");
+  // const [psychoDropdownOpen, setPsychoDropdownOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  const handleTabKey = useCallback((e: KeyboardEvent) => {
-    if (!isOpen) return;
-    
-    const firstFocusable = buttonRef.current;
-    const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
-      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
-    );
-    const lastFocusable = focusableElements?.[focusableElements.length - 1] || null;
+  const handleTabKey = useCallback(
+    (e: KeyboardEvent) => {
+      if (!isOpen) return;
 
-    if (!e.shiftKey && document.activeElement === lastFocusable) {
-      e.preventDefault();
-      firstFocusable?.focus();
-    }
+      const firstFocusable = buttonRef.current;
+      const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      const lastFocusable =
+        focusableElements?.[focusableElements.length - 1] || null;
 
-    if (e.shiftKey && document.activeElement === firstFocusable) {
-      e.preventDefault();
-      lastFocusable?.focus();
-    }
-  }, [isOpen]);
+      if (!e.shiftKey && document.activeElement === lastFocusable) {
+        e.preventDefault();
+        firstFocusable?.focus();
+      }
+
+      if (e.shiftKey && document.activeElement === firstFocusable) {
+        e.preventDefault();
+        lastFocusable?.focus();
+      }
+    },
+    [isOpen]
+  );
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
+      if (e.key === "Escape" && isOpen) {
         setIsOpen(false);
         buttonRef.current?.focus();
       }
     };
 
     if (isOpen) {
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Tab') handleTabKey(e);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Tab") handleTabKey(e);
       });
-      document.addEventListener('keydown', handleEscape);
+      document.addEventListener("keydown", handleEscape);
     }
 
     return () => {
-      document.removeEventListener('keydown', (e) => {
-        if (e.key === 'Tab') handleTabKey(e);
+      document.removeEventListener("keydown", (e) => {
+        if (e.key === "Tab") handleTabKey(e);
       });
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen, handleTabKey]);
 
@@ -60,14 +65,14 @@ export const Navigation = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   useEffect(() => {
-    setAriaLabel(isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    setAriaLabel(isOpen ? "Fermer le menu" : "Ouvrir le menu");
   }, [isOpen]);
 
   return (
@@ -83,9 +88,9 @@ export const Navigation = () => {
         </Link>
       </div>
 
-      <button 
+      <button
         ref={buttonRef}
-        className={styles.menuButton} 
+        className={styles.menuButton}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls="mainMenu"
@@ -94,16 +99,50 @@ export const Navigation = () => {
         <span className={styles.menuIcon}></span>
       </button>
 
-      <ul 
-        id="mainMenu" 
+      <ul
+        id="mainMenu"
         ref={menuRef}
-        className={`${styles.menuItems} ${isOpen ? styles.open : ''}`}
+        className={`${styles.menuItems} ${isOpen ? styles.open : ""}`}
       >
-        <li onClick={() => setIsOpen(false)}><Link href="/psychologie">La Psychologie</Link></li>
-        <li onClick={() => setIsOpen(false)}><Link href="/sophrologie">La Sophrologie</Link></li>
-        <li onClick={() => setIsOpen(false)}><Link href="/bilan">Bilan psychologique</Link></li>
-        <li onClick={() => setIsOpen(false)}><Link href="/cpim">CPIM</Link></li>
-        <li onClick={() => setIsOpen(false)}><Link href="/honoraires-et-contact">Honoraires et contact</Link></li>
+        {/* <li className={styles.dropdownContainer}>
+          <button 
+            onClick={() => setPsychoDropdownOpen(!psychoDropdownOpen)}
+            className={styles.dropdownButton}
+            aria-expanded={psychoDropdownOpen}
+            aria-controls="psychoSubmenu"
+          >
+            La Psychologie <span className={styles.dropdownIcon}></span>
+          </button>
+          <ul 
+            id="psychoSubmenu" 
+            className={`${styles.dropdownMenu} ${psychoDropdownOpen ? styles.show : ''}`}
+          >
+            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
+              <Link href="/psychologie#consultation">Consultation</Link>
+            </li>
+            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
+              <Link href="/psychologie#process">Process</Link>
+            </li>
+            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
+              <Link href="/psychologie#differences">Différences</Link>
+            </li>
+          </ul>
+        </li> */}
+        <li onClick={() => setIsOpen(false)}>
+          <Link href="/psychologie">La Psychologie</Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link href="/sophrologie">La Sophrologie</Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link href="/bilan">Bilan psychologique</Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link href="/cpim">CPIM</Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link href="/honoraires-et-contact">Honoraires et contact</Link>
+        </li>
         <span className={styles.inMenuCta}>
           <Cta />
         </span>
@@ -113,4 +152,4 @@ export const Navigation = () => {
       </span>
     </nav>
   );
-}
+};

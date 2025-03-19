@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 h1 {
@@ -70,6 +70,7 @@ h3 {
 }
 
 p {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
   font-weight: 400;
@@ -81,16 +82,26 @@ a {
 }
 
 /* Styles d'accessibilité */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.visually-hidden,
+.visually-hidden-focusable:not(:focus, :focus-within) {
+	border: 0 !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+.visually-hidden:not(caption),
+.visually-hidden-focusable:not(caption):not(:focus, :focus-within){
+	position: absolute !important;
+}
+
+.visually-hidden *,
+.visually-hidden-focusable:not(:focus, :focus-within) * {
+	overflow: hidden !important;
 }
 
 :focus:not(:focus-visible) {

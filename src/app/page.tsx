@@ -1,6 +1,6 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './page.module.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
 
 export default function Home() {

@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={AtkinsonHyperlegible.className}>
-        <Navigation />
+        <header role="banner">
+          <Navigation />
+        </header>
         <main>
           {children}
         </main>

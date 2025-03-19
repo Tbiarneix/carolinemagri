@@ -9,8 +9,8 @@
   
   width: 100%;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
+  border-bottom: 0.4rem solid var(--pastel-extralight);
 }
 
 .logo a {
@@ -90,6 +90,86 @@
   display: block;
 }
 
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdownButton:hover {
+  color: #fff;
+  background-color: var(--pastel-dark);
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  
+  min-width: 300px;
+  margin-top: 36px;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--pastel-medium);
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdownMenu.show {
+  display: block;
+}
+
+.dropdownMenu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdownMenu a:hover {
+  color: #fff;
+  background-color: var(--pastel-dark);
+}
+
+.dropdownIcon {
+  display: inline-block;
+  
+  width: 8px;
+  height: 8px;
+  margin: 3px 3px 3px 5px;
+  
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  transform: rotate(135deg);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.dropdownButton:hover .dropdownIcon {
+  border-color: #fff;
+  transform: rotate(315deg);
+  transform-origin: center;
+}
+
 @media (max-width: 1024px) {
   .nav {
     padding: 0.5rem 2rem;
@@ -120,6 +200,8 @@
     display: flex;
 
     height: calc(100svh - 3.5rem);
+  border-bottom: 0.4rem solid var(--pastel-extralight);
+
   }
 
   .menuItems li {
@@ -138,5 +220,18 @@
   
   .outMenuCta {
     display: none;
+  }
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    min-width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 0.5rem;
+  }
+
+  .dropdownButton {
+    width: 100%;
+    text-align: center;
   }
 }

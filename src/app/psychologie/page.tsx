@@ -8,7 +8,7 @@ export default function PsychologyPage() {
         <h1>La Psychologie</h1>
       </section>
 
-      <section className={styles.consultation}>
+      <section id="consultation" className={styles.consultation}>
         <h2>Pourquoi et qui consulter ?</h2>
         <p>
           Il existe de nombreuses difficultés qui peuvent être un motif de consultations à différents moments de votre vie, au sein à l&apos;écoute de vos demandes et de vos besoins afin de vous accompagner au mieux vers un équilibre personnel et/ou professionnel.
@@ -81,7 +81,7 @@ export default function PsychologyPage() {
         </div>
       </section>
 
-      <section className={styles.process}>
+      <section id="process" className={styles.process}>
         <h2>Déroulement d&apos;un suivi</h2>
         <div className={styles.processContent}>
           <p>
@@ -108,7 +108,7 @@ export default function PsychologyPage() {
         </div>
       </section>
 
-      <section className={styles.differences}>
+      <section id="differences" className={styles.differences}>
         <h2>Quelles différences entre tous ces « psy » ?</h2>
         <div className={styles.differencesContent}>
           <p>
