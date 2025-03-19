@@ -76,7 +76,7 @@ export const Navigation = () => {
   }, [isOpen]);
 
   return (
-    <nav className={styles.nav} role="navigation" aria-label="Menu principal">
+    <nav className={styles.nav} role="navigation" aria-label="Menu principal" id="main-navigation">
       <div className={styles.logo}>
         <Link onClick={() => setIsOpen(false)} href="/" aria-label="Accueil">
           <Image

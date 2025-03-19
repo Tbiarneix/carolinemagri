@@ -81,6 +81,14 @@ a {
   text-decoration: none;
 }
 
+#main-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+}
+
 /* Styles d'accessibilité */
 .visually-hidden,
 .visually-hidden-focusable:not(:focus, :focus-within) {

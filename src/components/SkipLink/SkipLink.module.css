@@ -1,0 +1,63 @@
+.skiplinks:focus-within {
+  padding: 1.5rem 2.5rem;
+  opacity: 1;
+}
+
+.skiplinks:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  border: 0 !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+.skiplinks a {
+  padding:1rem;
+  border: 1px solid var(--pastel-dark);
+  border-radius: 8px;
+  
+  background-color: var(--pastel-dark);
+  color: #fff;
+  transition: all 0.3s ease;
+  
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skiplinks a:hover {
+  background-color: var(--pastel-extralight) !important;
+  color: var(--pastel-dark) !important;
+  outline: none;
+}
+
+.skiplinks a:focus {
+  outline: 3px solid var(--pastel-dark) !important;
+  outline-offset: 2px;
+  background-color: var(--pastel-extralight) !important;
+  color: var(--pastel-dark) !important;
+}
+
+.skiplinks__list {
+  display: flex;
+  
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .skiplinks__list {
+    flex-direction: column;
+  }
+  
+  .skiplinks li {
+    padding: 0.6rem 0;
+  }
+}
