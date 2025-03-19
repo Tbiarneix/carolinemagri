@@ -78,7 +78,7 @@ export const Navigation = () => {
   return (
     <nav className={styles.nav} role="navigation" aria-label="Menu principal" id="main-navigation">
       <div className={styles.logo}>
-        <Link onClick={() => setIsOpen(false)} href="/" aria-label="Accueil">
+        <Link onClick={() => setIsOpen(false)} href="/" aria-label="Aller à la page d'accueil">
           <Image
             src="/images/logo-text-bicolor.png"
             alt="Logo de Caroline Magri"

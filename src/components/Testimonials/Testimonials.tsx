@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react';
 import styles from './Testimonials.module.css';
 import testimonialData from '@/data/testimonials.json';
+import Link from 'next/link';
 
 const StarRating = ({ rating }: { rating: number }) => {
   return (
@@ -113,7 +114,7 @@ export const Testimonials = () => {
       aria-roledescription="Carrousel d'avis clients"
     >
       <h2 id="testimonials-title">
-        Avis de patients
+        Avis des patients
       </h2>
       <button
         onClick={() => handleManualScroll('left')}
@@ -152,6 +153,32 @@ export const Testimonials = () => {
       >
         →
       </button>
+
+      <footer className={styles.testimonials__footer}>
+        <div className={styles.average_rating}>
+          <span>Note moyenne :</span>
+          <StarRating rating={testimonialData.averageRating} />
+          <span>{testimonialData.averageRating}/5</span>
+        </div>
+        <Link 
+          href={testimonialData.googleReviewUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.google_link}
+          aria-label="Voir tous les avis sur Google"
+        >
+          Voir tous les avis sur Google
+          <svg 
+            width="20" 
+            height="20" 
+            viewBox="0 0 24 24" 
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M16 8v-4l8 8-8 8v-4h-16v-8h16z"/>
+          </svg>
+        </Link>
+      </footer>
     </section>
   );
 };
