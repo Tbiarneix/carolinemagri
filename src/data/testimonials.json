@@ -1,0 +1,39 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Marie L.",
+      "rating": 5,
+      "text": "Une professionnelle à l'écoute et bienveillante. Les séances m'ont beaucoup aidée à surmonter mes difficultés.",
+      "date": "2024-02"
+    },
+    {
+      "id": 2,
+      "name": "Thomas R.",
+      "rating": 5,
+      "text": "Excellente prise en charge de mon fils. Caroline a su créer un climat de confiance et l'accompagner dans son développement.",
+      "date": "2024-01"
+    },
+    {
+      "id": 3,
+      "name": "Sophie M.",
+      "rating": 5,
+      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
+      "date": "2023-12"
+    },
+    {
+      "id": 4,
+      "name": "Sophie M.",
+      "rating": 5,
+      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
+      "date": "2023-12"
+    },
+    {
+      "id": 5,
+      "name": "Sophie M.",
+      "rating": 5,
+      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
+      "date": "2023-12"
+    }
+  ]
+}

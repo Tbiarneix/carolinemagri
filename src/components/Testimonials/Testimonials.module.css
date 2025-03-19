@@ -1,0 +1,125 @@
+.testimonials {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  background-color: var(--color-background-light);
+  position: relative;
+}
+
+.testimonials__title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-text-primary);
+}
+
+.testimonials__container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.testimonial {
+  flex: 0 0 calc(33.333% - 1.33rem);
+  min-width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--pastel-medium);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover,
+.testimonial:focus-within {
+  transform: translateY(-5px);
+}
+
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name {
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.testimonial__rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-left: auto;
+  color: #ffd700;
+}
+
+.testimonial__text {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial__date {
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.nav_button {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 40px;
+  height: 40px;
+  
+  color: #fff;
+  background: var(--pastel-dark);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.nav_button:hover,
+.nav_button:focus,
+.nav_button:active {
+  background-color: var(--color-background-light);
+  border: 1px solid var(--pastel-dark);
+  color: var(--pastel-dark);
+}
+
+.nav_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.prev_button {
+  left: -5rem;
+}
+
+.next_button {
+  right: -5rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    flex: 0 0 calc(100% - 2rem);
+  }
+  
+  .testimonials__container {
+    padding: 0 3rem;
+  }
+}

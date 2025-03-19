@@ -23,5 +23,9 @@
   .button:focus-visible {
     outline: 3px solid var(--pastel-dark);
     outline-offset: 2px;
+
+    color: var(--pastel-dark) !important;
+    background-color: var(--pastel-extralight) !important;
+    border: 1px solid var(--pastel-dark) !important;
     border-radius: 30px !important;
   }

@@ -2,6 +2,7 @@
 import styles from './page.module.css';
 // import Image from 'next/image';
 import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
+import { Testimonials } from '@/components/Testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -138,6 +139,7 @@ export default function Home() {
           </div>
         </div>
     </section>
+    <Testimonials />
     </>
   );
 }
