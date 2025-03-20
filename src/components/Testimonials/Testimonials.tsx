@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import styles from './Testimonials.module.css';
 import testimonialData from '@/data/testimonials.json';
 import Link from 'next/link';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 const StarRating = ({ rating }: { rating: number }) => {
   return (
@@ -21,10 +22,6 @@ export const Testimonials = () => {
   const containerRef = useRef<HTMLUListElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
-  const [isPaused, setIsPaused] = useState<boolean>(false);
-  const animationRef = useRef<number | null>(null);
-  const lastTimeRef = useRef<number | null>(null);
-  const scrollSpeedRef = useRef(0.05); // Vitesse réduite : 0.05 pixels par milliseconde
 
   const checkScrollButtons = useCallback(() => {
     if (containerRef.current) {
@@ -48,46 +45,12 @@ export const Testimonials = () => {
     }
   }, [checkScrollButtons]);
 
-  const animate = useCallback((timestamp: number) => {
-    if (!lastTimeRef.current) lastTimeRef.current = timestamp;
-    const deltaTime = timestamp - lastTimeRef.current;
-    lastTimeRef.current = timestamp;
-
-    if (!isPaused) {
-      // Utiliser deltaTime pour un mouvement fluide indépendant du framerate
-      const pixelsToMove = scrollSpeedRef.current * deltaTime;
-      scroll('right', pixelsToMove);
-    }
-
-    animationRef.current = requestAnimationFrame(animate);
-  }, [isPaused, scroll]);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      checkScrollButtons();
-      container.addEventListener('scroll', checkScrollButtons);
-      window.addEventListener('resize', checkScrollButtons);
-
-      // Démarrer l'animation
-      animationRef.current = requestAnimationFrame(animate);
-
-      return () => {
-        container.removeEventListener('scroll', checkScrollButtons);
-        window.removeEventListener('resize', checkScrollButtons);
-        if (animationRef.current !== null) {
-          cancelAnimationFrame(animationRef.current);
-        }
-      };
-    }
-  }, [checkScrollButtons, animate]);
-
   const handleManualScroll = useCallback((direction: 'left' | 'right') => {
     if (containerRef.current) {
       const container = containerRef.current;
-      const scrollAmount = 100; // Défilement plus rapide pour les clics manuels
+      const testimonialWidth = container.firstElementChild?.clientWidth || 0;
       container.scrollTo({
-        left: container.scrollLeft + (direction === 'left' ? -scrollAmount : scrollAmount),
+        left: container.scrollLeft + (direction === 'left' ? -testimonialWidth : testimonialWidth),
         behavior: 'smooth'
       });
       checkScrollButtons();
@@ -107,8 +70,6 @@ export const Testimonials = () => {
     <section 
       className={styles.testimonials} 
       aria-labelledby="testimonials-title"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
       onKeyDown={handleKeyDown}
       role="region"
       aria-roledescription="Carrousel d'avis clients"
@@ -122,7 +83,7 @@ export const Testimonials = () => {
         disabled={!canScrollLeft}
         aria-label="Voir les avis précédents"
       >
-        ←
+        <ChevronLeft aria-hidden="true" />
       </button>
       <ul 
         ref={containerRef}
@@ -151,7 +112,7 @@ export const Testimonials = () => {
         disabled={!canScrollRight}
         aria-label="Voir les avis suivants"
       >
-        →
+        <ChevronRight />
       </button>
 
       <footer className={styles.testimonials__footer}>
@@ -168,15 +129,7 @@ export const Testimonials = () => {
           aria-label="Voir tous les avis sur Google"
         >
           Voir tous les avis sur Google
-          <svg 
-            width="20" 
-            height="20" 
-            viewBox="0 0 24 24" 
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M16 8v-4l8 8-8 8v-4h-16v-8h16z"/>
-          </svg>
+          <ExternalLink />
         </Link>
       </footer>
     </section>
