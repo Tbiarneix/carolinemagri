@@ -31,20 +31,6 @@ export const Testimonials = () => {
     }
   }, []);
 
-  const scroll = useCallback((direction: 'left' | 'right', amount: number) => {
-    if (containerRef.current) {
-      const container = containerRef.current;
-      const scrollAmount = direction === 'left' ? -amount : amount;
-      container.scrollLeft += scrollAmount;
-
-      // Retour au début si on est à la fin
-      if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 1) {
-        container.scrollLeft = 0;
-      }
-      checkScrollButtons();
-    }
-  }, [checkScrollButtons]);
-
   const handleManualScroll = useCallback((direction: 'left' | 'right') => {
     if (containerRef.current) {
       const container = containerRef.current;
@@ -77,14 +63,6 @@ export const Testimonials = () => {
       <h2 id="testimonials-title">
         Avis des patients
       </h2>
-      <button
-        onClick={() => handleManualScroll('left')}
-        className={`${styles.nav_button} ${styles.prev_button}`}
-        disabled={!canScrollLeft}
-        aria-label="Voir les avis précédents"
-      >
-        <ChevronLeft aria-hidden="true" />
-      </button>
       <ul 
         ref={containerRef}
         className={styles.testimonials__container}
@@ -106,15 +84,24 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-      <button
-        onClick={() => handleManualScroll('right')}
-        className={`${styles.nav_button} ${styles.next_button}`}
-        disabled={!canScrollRight}
-        aria-label="Voir les avis suivants"
-      >
-        <ChevronRight />
-      </button>
-
+      <div className={styles.testimonials__navigation}>
+        <button
+          onClick={() => handleManualScroll('left')}
+          className={`${styles.nav_button} ${styles.prev_button}`}
+          disabled={!canScrollLeft}
+          aria-label="Voir les avis précédents"
+        >
+          <ChevronLeft aria-hidden="true" />
+        </button>
+        <button
+          onClick={() => handleManualScroll('right')}
+          className={`${styles.nav_button} ${styles.next_button}`}
+          disabled={!canScrollRight}
+          aria-label="Voir les avis suivants"
+        >
+          <ChevronRight />
+        </button>
+      </div>
       <footer className={styles.testimonials__footer}>
         <div className={styles.average_rating}>
           <span>Note moyenne :</span>

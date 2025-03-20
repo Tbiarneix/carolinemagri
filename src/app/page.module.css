@@ -70,8 +70,6 @@
 }
 
 .professional {
-  padding: 2rem;
-
   h2 {
     max-width: 1200px;
     margin: 0 auto 3rem;
@@ -83,7 +81,7 @@
 
     max-width: 1200px;
     margin: 0 auto;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .professional__column {
@@ -100,7 +98,7 @@
   .hero {
     flex-direction: column;
 
-    padding: 0 2rem;
+    padding: 0;
 
     .hero__presentation {
       flex-direction: column;
@@ -118,6 +116,10 @@
   .description {
     font-size: 1.1rem;
     margin: 0 auto 2rem;
+  }
+
+  .professional__content {
+    gap: 1rem;
   }
 }
 
@@ -146,6 +148,7 @@
 
     .professional__content {
       flex-direction: column;
+      gap: 1rem;
     }
 
     .professional__column {

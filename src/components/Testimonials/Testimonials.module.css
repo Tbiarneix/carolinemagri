@@ -1,7 +1,6 @@
 .testimonials {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 0;
+  margin: 1rem auto 3rem;
   background-color: var(--color-background-light);
   position: relative;
 }
@@ -55,7 +54,7 @@
   display: flex;
   gap: 0.25rem;
   margin-left: auto;
-  color: #ffd700;
+  color: var(--pastel-dark);
 }
 
 .testimonial__text {
@@ -92,9 +91,9 @@
 .nav_button:hover,
 .nav_button:focus,
 .nav_button:active {
-  background-color: var(--color-background-light);
   border: 1px solid var(--pastel-dark);
   color: var(--pastel-dark);
+  background-color: #fff;
 }
 
 .nav_button:disabled {
@@ -149,6 +148,34 @@
   color: white;
 }
 
+@media (max-width: 1400px) {
+  .prev_button {
+    left: 1rem;
+  }
+  
+  .next_button {
+    right: 1rem;
+  }
+
+  .testimonials__container {
+    width: 85%;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5rem,
+      black calc(100% - 5rem),
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5rem,
+      black calc(100% - 5rem),
+      transparent
+    );
+  }
+}
+
 @media (max-width: 768px) {
   .testimonials {
     padding: 4rem 0;
@@ -199,5 +226,74 @@
   .next_button {
     right: 0.5rem;
     z-index: 2;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonials__container {
+    order: 1;
+    margin: 0;
+    padding: 0;
+    mask-image: none;
+    -webkit-mask-image: none;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .testimonial {
+    flex: 0 0 90%;
+    margin: 0 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+  }
+
+  .nav_button {
+    position: static;
+    order: 2;
+    transform: none;
+    width: 48px;
+    height: 48px;
+    background: var(--color-background-light);
+    border: 1px solid var(--pastel-dark);
+    color: var(--pastel-dark);
+    transition: all 0.3s ease;
+  }
+
+  .nav_button:hover:not(:disabled),
+  .nav_button:focus:not(:disabled) {
+    background: var(--pastel-dark);
+    color: var(--color-background-light);
+  }
+
+  .nav_button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: var(--color-text-tertiary);
+    color: var(--color-text-tertiary);
+  }
+
+  .prev_button,
+  .next_button {
+    position: static;
+  }
+
+  .testimonials__navigation {
+    order: 2;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .testimonials__footer {
+    order: 3;
+    margin-top: 1.5rem;
   }
 }

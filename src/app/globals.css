@@ -34,6 +34,7 @@ body {
 
 main {
   margin-top: 6rem;
+  padding: 0 2rem;
 }
 
 h1 {
@@ -122,6 +123,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding: 0 1.5rem;
+   } 
+
   h1 {
     font-size: 2rem;
   }
@@ -131,6 +136,16 @@ a {
   }
 
   h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 375px) {
+ main {
+  padding: 0 0.5rem;
+ } 
 }
