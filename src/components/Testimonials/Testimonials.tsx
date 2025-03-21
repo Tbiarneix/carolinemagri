@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect, useCallback } from 'react';
+import { useRef, useState, useCallback } from 'react';
 import styles from './Testimonials.module.css';
 import testimonialData from '@/data/testimonials.json';
 import Link from 'next/link';

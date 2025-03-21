@@ -1,6 +1,5 @@
 .testimonials {
   max-width: 1200px;
-  margin: 1rem auto 3rem;
   background-color: var(--color-background-light);
   position: relative;
 }
@@ -178,13 +177,11 @@
 
 @media (max-width: 768px) {
   .testimonials {
-    padding: 4rem 0;
     overflow: hidden;
   }
 
   .testimonials__container {
     margin: 0 auto;
-    padding: 1rem 0;
     width: 100%;
     gap: 0;
     scroll-snap-type: x mandatory;

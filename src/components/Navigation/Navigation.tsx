@@ -10,7 +10,6 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [ariaLabel, setAriaLabel] = useState("Ouvrir le menu");
-  // const [psychoDropdownOpen, setPsychoDropdownOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -104,30 +103,6 @@ export const Navigation = () => {
         ref={menuRef}
         className={`${styles.menuItems} ${isOpen ? styles.open : ""}`}
       >
-        {/* <li className={styles.dropdownContainer}>
-          <button 
-            onClick={() => setPsychoDropdownOpen(!psychoDropdownOpen)}
-            className={styles.dropdownButton}
-            aria-expanded={psychoDropdownOpen}
-            aria-controls="psychoSubmenu"
-          >
-            La Psychologie <span className={styles.dropdownIcon}></span>
-          </button>
-          <ul 
-            id="psychoSubmenu" 
-            className={`${styles.dropdownMenu} ${psychoDropdownOpen ? styles.show : ''}`}
-          >
-            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
-              <Link href="/psychologie#consultation">Consultation</Link>
-            </li>
-            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
-              <Link href="/psychologie#process">Process</Link>
-            </li>
-            <li onClick={() => { setIsOpen(false); setPsychoDropdownOpen(false); }}>
-              <Link href="/psychologie#differences">Différences</Link>
-            </li>
-          </ul>
-        </li> */}
         <li onClick={() => setIsOpen(false)}>
           <Link href="/psychologie">La Psychologie</Link>
         </li>
