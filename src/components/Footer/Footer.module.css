@@ -5,6 +5,12 @@
   margin-top: 4rem;
 }
 
+.footer a:focus-visible {
+  outline: 3px solid var(--pastel-extralight);
+  outline-offset: 5px;
+  
+}
+
 .footerContent {
   max-width: 1200px;
   margin: 0 auto;

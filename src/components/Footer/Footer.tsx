@@ -38,8 +38,9 @@ export const Footer = () => {
           <div>
             <h3>A propos</h3>
             <ul className={styles.siteMap}>
-              <li><Link href="/a-propos">Accessibilité</Link></li>
               <li><Link href="/mentions-legales">Mentions légales</Link></li>
+              <li><Link href="/donnees-personnelles">Données personnelles et cookies</Link></li>
+              <li><Link href="/a-propos">Accessibilité: Non conforme</Link></li>
             </ul>
           </div>
         </div>
