@@ -1,5 +1,5 @@
+import { InfoCards } from '@/components/Cards/InfoCards/InfoCards';
 import styles from './page.module.css';
-import Image from 'next/image';
 
 export default function PsychologyPage() {
   return (
@@ -18,66 +18,37 @@ export default function PsychologyPage() {
         </p>
 
         <div className={styles.imageGrid}>
-          <div className={styles.imageCard}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="/images/enfants.jpg"
-                alt="Illustration représentant l'accompagnement des enfants et adolescents"
-                width={300}
-                height={300}
-                className={styles.image}
-              />
-            </div>
+          <InfoCards title="De la petite enfance à l&apos;adolescence" imgSrc="/images/enfants.jpg">
             <ul>
-              <li>De la petite enfance à l&apos;adolescence :</li>
-              <li>Troubles affectifs</li>
-              <li>Bébé ou enfant agité</li>
+              <li>Naissance difficile</li>
+              <li>Bébé ou enfant angoissé</li>
               <li>Troubles du sommeil</li>
               <li>Difficultés de séparation</li>
               <li>Difficultés scolaires et apprentissage</li>
               <li>Retard de langage</li>
               <li>Difficultés de communication</li>
             </ul>
-          </div>
+          </InfoCards>
 
-          <div className={styles.imageCard}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="/images/couples.jpg"
-                alt="Illustration représentant l'accompagnement scolaire et familial"
-                width={300}
-                height={300}
-                className={styles.image}
-              />
-            </div>
+          <InfoCards title="Couples et familles" imgSrc="/images/couples.jpg">
             <ul>
-              <li>Scolarité - Etudes :</li>
-              <li>Accompagnement à la scolarité</li>
+              <li>Accompagnement à la parentalité</li>
               <li>Difficultés d&apos;autorité</li>
               <li>Difficultés de communication</li>
+              <li>Rupture du lien familliale</li>
               <li>Séparation</li>
             </ul>
-          </div>
+          </InfoCards>
 
-          <div className={styles.imageCard}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="/images/adultes.jpg"
-                alt="Illustration représentant l'accompagnement des adultes"
-                width={300}
-                height={300}
-                className={styles.image}
-              />
-            </div>
+          <InfoCards title="Adultes" imgSrc="/images/adultes.jpg">
             <ul>
-              <li>Adultes :</li>
               <li>Difficultés professionnelles</li>
               <li>Expériences difficiles</li>
               <li>Deuil</li>
               <li>Relations relationnelles</li>
               <li>Problématique familiale</li>
             </ul>
-          </div>
+          </InfoCards>
         </div>
       </section>
 
@@ -88,22 +59,20 @@ export default function PsychologyPage() {
             La première séance est là pour nous permettre de prendre contact, de commencer à nous connaître. Vous me ferez part de vos demandes, vos besoins, les raisons qui vous poussent à venir voir un psychologue et vos attentes.
           </p>
           <p>
-            Une deuxième sera dédiée, c&apos;est-à-dire votre histoire de vie, de la grossesse jusqu&apos;à présent. Cela permet de comprendre votre construction, comment vous êtes devenu(e) la personne que vous êtes aujourd&apos;hui et qui me permet de mieux vous connaître.
+          Une anamnèse sera réalisée, c&apos;est-à-dire votre histoire de vie, de la grossesse jusqu&apos;à présent. Cela permet de comprendre votre construction, comment vous êtes devenu(e) la personne que vous êtes aujourd&apos;hui et qui me permet de mieux vous connaître.
           </p>
           <p>
             En fin de séance, je vous proposerai un suivi adapté à votre demande, à vos besoins et à vos difficultés ainsi que les modalités d&apos;organisation des séances. Ce ne sont que des propositions, vous serez être sujet à discussion.
           </p>
           <p>
-            Cette première rencontre n&apos;est pas un engagement. Vous êtes libre de poursuivre avec moi ou pas et être en route professionnel proposant une pratique différente, si vous ne vous sentez pas à l&apos;aise. Il est important que vous considériez que vous n&apos;hésitez pas à en parler.
+            Cette première rencontre n&apos;est pas un engagement. Vous êtes libre de poursuivre avec moi ou pas et être en route professionnel proposant une pratique différente, si vous ne vous sentez pas à l&apos;aise. Si le cadre de travail proposé ne vous convenait pas, n&apos;hésitez surtout pas à m'en parler.
           </p>
           <p>
-            Pour la suite, des objectifs seront fixés ensemble en début de suivi.
-          </p>
-          <p>
+            Pour la suite, des objectifs seront fixés ensemble en début de suivi. <br/>
             Nous verrons par ces objectifs seront fixés discutés au suivi et pourront évoluer au fur et à mesure.
           </p>
           <p>
-            Les temps de séances se vie sont à votre disposition. N&apos;hésitez à poser toutes les questions qu&apos;il vous sera nécessaire.
+            Les temps de séances et ce lieu sont à votre disposition. Alors surtout, posez toutes les questions qu&apos;il vous sera nécessaire.
           </p>
         </div>
       </section>
@@ -133,12 +102,6 @@ export default function PsychologyPage() {
           </ul>
         </div>
       </section>
-
-      <div className={styles.cta}>
-        <a href="#contact" className={styles.button}>
-          Prendre rendez-vous
-        </a>
-      </div>
     </div>
   );
 }

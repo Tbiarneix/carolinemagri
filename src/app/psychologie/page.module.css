@@ -1,12 +1,14 @@
+.psychologyPage {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .hero {
-  background: var(--background-linear);
-  padding: 4rem 2rem;
+  padding-top: 4rem;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  color: var(--text);
   margin-bottom: 1rem;
   position: relative;
 }
@@ -23,102 +25,11 @@
   border-radius: 2px;
 }
 
-.consultation,
-.process,
-.differences {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
-
-.consultation p,
-.process p,
-.differences p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-light);
-  margin-bottom: 1.5rem;
-}
-
 .imageGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
   margin-top: 3rem;
-}
-
-.imageCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  padding: 2rem;
-  border-radius: 16px;
-  
-  background: var(--pastel-dark);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.imageCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(117, 199, 154, 0.15);
-}
-
-.imageWrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.image {
-  object-fit: cover;
-  transition: transform 0.5s ease;
-  width: 100%;
-  height: 100%;
-}
-
-.imageCard:hover .image {
-  transform: scale(1.05);
-}
-
-.imageCard ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.imageCard li {
-  font-size: 1.1rem;
-  color: #fff;
-  margin-bottom: 0.75rem;
-  padding-left: 1.75rem;
-  position: relative;
-  line-height: 1.6;
-}
-
-.imageCard li:first-child {
-  font-weight: 600;
-  color: var(--primary);
-  padding-left: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.imageCard li:not(:first-child)::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--primary);
 }
 
 .processContent,
@@ -139,7 +50,7 @@
 }
 
 .differencesContent strong {
-  color: var(--primary);
+  color: var(--pastel-dark);
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
