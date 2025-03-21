@@ -5,6 +5,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import styles from "./Navigation.module.css";
 import Image from "next/image";
 import { Cta } from "../CTA/Cta";
+import { usePathname } from "next/navigation";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ export const Navigation = () => {
   const [ariaLabel, setAriaLabel] = useState("Ouvrir le menu");
   const menuRef = useRef<HTMLUListElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
 
   const handleTabKey = useCallback(
     (e: KeyboardEvent) => {
@@ -104,19 +106,19 @@ export const Navigation = () => {
         className={`${styles.menuItems} ${isOpen ? styles.open : ""}`}
       >
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/psychologie">La Psychologie</Link>
+          <Link href="/psychologie" className={pathname === '/psychologie' ? styles.active : ''}>La Psychologie</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/sophrologie">La Sophrologie</Link>
+          <Link href="/sophrologie" className={pathname === '/sophrologie' ? styles.active : ''}>La Sophrologie</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/bilan">Bilan psychologique</Link>
+          <Link href="/bilan" className={pathname === '/bilan' ? styles.active : ''}>Bilan psychologique</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/cpim">CPIM</Link>
+          <Link href="/cpim" className={pathname === '/cpim' ? styles.active : ''}>CPIM</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/honoraires-et-contact">Honoraires et contact</Link>
+          <Link href="/honoraires-et-contact" className={pathname === '/honoraires-et-contact' ? styles.active : ''}>Honoraires et contact</Link>
         </li>
         <span className={styles.inMenuCta}>
           <Cta />

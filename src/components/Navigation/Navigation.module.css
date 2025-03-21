@@ -37,6 +37,16 @@
   outline: none;
 }
 
+.menuItems a.active {
+  color: #fff;
+  background-color: var(--pastel-dark);
+}
+
+.menuItems a:active {
+  color: #fff;
+  background-color: var(--pastel-dark);
+}
+
 .menuButton {
   display: none;
   background: none;
