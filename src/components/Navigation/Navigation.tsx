@@ -120,13 +120,13 @@ export const Navigation = () => {
         <li onClick={() => setIsOpen(false)}>
           <Link href="/honoraires-et-contact" className={pathname === '/honoraires-et-contact' ? styles.active : ''}>Honoraires et contact</Link>
         </li>
-        <span className={styles.inMenuCta}>
+        <li className={styles.inMenuCta}>
           <Cta />
-        </span>
+        </li>
       </ul>
-      <span className={styles.outMenuCta}>
+      <div className={styles.outMenuCta}>
         <Cta />
-      </span>
+      </div>
     </nav>
   );
 };

@@ -1,6 +1,4 @@
-// import Link from 'next/link';
 import styles from './page.module.css';
-// import Image from 'next/image';
 import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
 import { Testimonials } from '@/components/Testimonials/Testimonials';
 
@@ -30,7 +28,7 @@ export default function Home() {
       <section className={styles.discovery}>
         <h2>Découvrir</h2>
         <ul className={styles.discovery__container}>
-          <li className={styles.discovery__item} tabIndex={0} aria-label="La Psychologie" role="link">
+          <li className={styles.discovery__item} aria-label="La Psychologie">
             <LinkCards
               theme={Theme.Light}
               href="/psychologie"
@@ -41,7 +39,7 @@ export default function Home() {
               alt=""
             />
           </li>
-          <li className={styles.discovery__item} tabIndex={0} aria-label="La Sophrologie" role="link">
+          <li className={styles.discovery__item} aria-label="La Sophrologie">
             <LinkCards
               theme={Theme.Light}
               href="/sophrologie"
@@ -52,7 +50,7 @@ export default function Home() {
               alt=""
             />
           </li>
-          <li className={styles.discovery__item} tabIndex={0} aria-label="Bilan Psychologique" role="link">
+          <li className={styles.discovery__item} aria-label="Bilan Psychologique">
             <LinkCards
               theme={Theme.Light}
               href="/bilan"
@@ -63,7 +61,7 @@ export default function Home() {
               alt=""
             />
           </li>
-          <li className={styles.discovery__item} tabIndex={0} aria-label="Contact" role="link">
+          <li className={styles.discovery__item} aria-label="Contact">
             <LinkCards
               theme={Theme.Light}
               href="/honoraires-et-contact"

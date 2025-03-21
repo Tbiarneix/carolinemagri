@@ -19,7 +19,7 @@ export enum Theme {
 
 export const LinkCards = ({theme, href, title, imgSrc, width, height, alt}: LinkCardsProps) => {
   return (
-    <Link href={href} tabIndex={-1} className={styles.linkCard + ' ' + styles[theme]}>
+    <Link href={href} className={styles.linkCard + ' ' + styles[theme]}>
       <h3>{title}</h3>
       <div className={styles.imageContainer}>
         <Image

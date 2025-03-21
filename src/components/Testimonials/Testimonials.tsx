@@ -93,7 +93,7 @@ export const Testimonials = () => {
           disabled={!canScrollLeft}
           aria-label="Voir les avis précédents"
         >
-          <ChevronLeft aria-hidden="true" />
+          <ChevronLeft />
         </button>
         <button
           onClick={() => handleManualScroll('right')}
