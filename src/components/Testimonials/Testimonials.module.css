@@ -22,7 +22,10 @@
 }
 
 .testimonial {
-  flex: 0 0 calc(33.333% - 1.33rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 calc(45% - 1.2rem);
   min-width: 300px;
   background: white;
   padding: 2rem;
@@ -58,6 +61,7 @@
 
 .testimonial__text {
   color: var(--color-text-secondary);
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -65,8 +69,8 @@
 .testimonial__date {
   font-size: 0.875rem;
   color: var(--color-text-tertiary);
-  margin-top: 1rem;
   text-align: right;
+  margin: 0;
 }
 
 .nav_button {

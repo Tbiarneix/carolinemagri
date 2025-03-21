@@ -75,11 +75,13 @@ export const Testimonials = () => {
             className={styles.testimonial}
             tabIndex={0}
           >
+            <div>
             <div className={styles.testimonial__header}>
               <h3 className={styles.testimonial__name}>{testimonial.name}</h3>
               <StarRating rating={testimonial.rating} />
             </div>
             <p className={styles.testimonial__text}>{testimonial.text}</p>
+            </div>
             <p className={styles.testimonial__date}>{testimonial.date}</p>
           </li>
         ))}

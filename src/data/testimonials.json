@@ -1,41 +1,41 @@
 {
   "averageRating": 4.9,
-  "googleReviewUrl": "https://g.page/r/CQvGjp9BmXvYEBM/review",
+  "googleReviewUrl": "https://www.google.com/search?client=firefox-b-d&sa=X&sca_esv=48dfc91899ccc164&tbm=lcl&q=Caroline+Magri,+Psychologue+-+Sophrologue+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MjEzNDYzMTQxN7C0MDcxszAz3MDI-IpRzzmxKD8nMy9VwTcxvShTRyGguDI5Iz8nP700VUFXITi_IKMIynMsyyxexEqiBgC-2fAYfAAAAA&rldimm=2461364147098746861&hl=fr-FR&ved=2ahUKEwjjs-md15uMAxXaRKQEHRsKCcAQ9fQKegQISBAF&biw=1920&bih=919&dpr=1#lkt=LocalPoiReviews",
   "testimonials": [
     {
       "id": 1,
-      "name": "Marie L.",
+      "name": "Milana S.",
       "rating": 5,
-      "text": "Une professionnelle à l'écoute et bienveillante. Les séances m'ont beaucoup aidée à surmonter mes difficultés.",
-      "date": "2024-02"
+      "text": "Les mots ne sauraient exprimer toute la gratitude que j’ai envers Madame Magri pour ses analyses, son aide, sa compassion, et la manière dont elle nous ouvre sur une perception différente des choses Je vous la recommande les yeux fermés, si vous cherchez une psychologue/sophrologue active, à l’écoute, extrêmement bienveillante ...",
+      "date": "12-2022"
     },
     {
       "id": 2,
-      "name": "Thomas R.",
+      "name": "Sandrine I.",
       "rating": 5,
-      "text": "Excellente prise en charge de mon fils. Caroline a su créer un climat de confiance et l'accompagner dans son développement.",
-      "date": "2024-01"
+      "text": "Un grand merci à Caroline Magri pour son accompagnement, son professionnalisme, sa gentillesse, sa bienveillance et son dévouement. La pratique de la sophrologie est pour le patient un véritable point positif dans son accompagnement.",
+      "date": "02-2025"
     },
     {
       "id": 3,
-      "name": "Sophie M.",
+      "name": "A. P.",
       "rating": 5,
-      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
-      "date": "2023-12"
+      "text": "Caroline avec beaucoup de finesse et de professionnalisme vous encourage quand les progrès sont là et vous soutient quand cela va moins bien en semant ce qu elle appelle des petites graines. Merci pour votre bienveillance qui va me permettre de faire des choix de vie en accord avec ce que je veux aujourd'hui.",
+      "date": "10-2023"
     },
     {
       "id": 4,
-      "name": "Sophie M.",
+      "name": "Stéphanie M.",
       "rating": 5,
-      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
-      "date": "2023-12"
+      "text": "Un grand Merci Caroline pour votre bienveillance, votre écoute et votre professionnalisme.Ma fille a beaucoup aimé parler avec vous, échanger et trouver parfois les clés pour mieux appréhender certaines situations compliquées à ses yeux. Quand à moi, nos échanges m'aident énormément à prendre du recul et à m'alléger tjs un peu plus",
+      "date": "01-2023"
     },
     {
       "id": 5,
-      "name": "Sophie M.",
+      "name": "Sharlène D.",
       "rating": 5,
-      "text": "Je recommande vivement Caroline pour sa double expertise en psychologie et sophrologie. Son approche est très complète.",
-      "date": "2023-12"
+      "text": "J'ai eu la chance de pratiquer la sophrologie en groupe avec Mme Magri pendant ma grossesse. C'était de bons moments de détente, relaxation en profondeur, guidés et soutenue par Mme Magri qui prends ensuite un vrai temps d'échange et de partage des ressenti. Un moment de plénitude et de pleine conscience comme je les aimes ! Allez-y les yeux fermé, cette femme est une bonne fée remplie de douceur, de bienveillance et de professionnalisme !",
+      "date": "02-2017"
     }
   ]
 }

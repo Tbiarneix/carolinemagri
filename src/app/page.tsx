@@ -20,7 +20,7 @@ export default function Home() {
                 Je m&apos;appelle Caroline MAGRI, je suis psychologue du développement de l&apos;enfant et de l&apos;adolescent et sophrologue. Je vous souhaite la bienvenue sur mon site, qui a pour objectif de vous éclairer sur ma pratique dans l&apos;accompagnement psychologique-enfants, d&apos;adolescents et d&apos;adultes en difficulté, à un moment de leur vie.
               </p>
               <p>
-                Vous trouverez également sur ce site quelques informations complémentaires, par exemple sur les différentes professions « psy » ou encore des informations sur la prise en charge en sophrologie.
+                Vous trouverez également sur ce site quelques informations complémentaires, par exemple sur les différentes professions «&nbsp;psy&nbsp;» ou encore des informations sur la prise en charge en sophrologie.
               </p>
             </div>
           </div>
@@ -83,33 +83,20 @@ export default function Home() {
           <div className={styles.professional__column}>
             <h3>Mon parcours professionnel</h3>
             <p>
-              Spécialisée dans le développement, je suis diplomée d&apos;un Master professionnel 
-              de Psychologie du développement de l&apos;enfant et de l&apos;adolescent obtenu à 
-              l&apos;Université de Rouen Normandie à Caen. Je suis également diplomée en 
-              sophrologie et inscrite au Répertoire National des Certifications 
-              professionnelles.
+              Spécialisée dans le développement, je suis diplômée d&apos;un Master professionnel de Psychologie du développement de l&apos;enfant et de l&apos;adolescent obtenu à l&apos;Université de Basse Normandie à Caen. Je suis également diplômée en Sophrologie et inscrit au Répertoire National des Certifications professionnelles.<br />
+              <a href="http://www.cncp.gouv.fr/" target="_blank" rel="noopener noreferrer">http://www.cncp.gouv.fr/</a>
             </p>
             <p>
-              De part ma formation et ma pratique, je considère la personne dans sa 
-              globalité et dans l&apos;ensemble des contextes où elle évolue afin de mieux 
-              comprendre les difficultés qu&apos;elle peut rencontrer. Ma formation de 
-              psychologue du développement m&apos;a permis d&apos;acquérir une approche intégrative 
-              professionnelle de la personne humaine : il s&apos;agit non pas d&apos;un point central de la 
-              prise en charge psychologique.
+              De part ma formation et ma pratique, je considère la personne dans sa globalité et tiens compte des contextes au sein desquels elle évolue afin de soutenir l&apos;émergence de ses capacités, de favoriser son autonomie et son mieux-être. L&apos;intégration de la sphère familiale, sociale et scolaire/professionnelle de la personne, constitue à mon sens un point central de la prise en charge psychologique.
             </p>
             <p>
-              La psychologie du développement s&apos;intéresse au développement de l&apos;individu 
-              de la naissance à l&apos;adolescence. L&apos;objet de la psychologie du développement 
-              concerne l&apos;analyse des changements développementaux et l&apos;étude de multiples 
-              facteurs et de leur interaction intervenant sur l&apos;évolution. Elle ne se résume 
-              pas aux enseignements qui se produisent pendant l&apos;enfance mais s&apos;intéresse à 
-              l&apos;ensemble des changements qui se produisent de la conception jusqu&apos;à la fin 
-              de la vie.
+              La psychologie du développement s&apos;intéresse au développement de l&apos;individu de la naissance à l&apos;adolescence. L&apos;objet de la psychologie du développement concerne l&apos;analyse des changements développementaux et l&apos;étude de multiples facteurs et de leur interaction intervenant sur l&apos;évolution. Elle ne se restreint pas aux changements qui se produisent pendant l&apos;enfance mais s&apos;intéresse à l&apos;ensemble des changements qui se produisent dès la conception jusqu&apos;à la fin de la vie.
             </p>
             <p>
-              Mon travail dans le domaine de la psychologie du développement s&apos;intéresse à la 
-              manière dont un individu n&apos;est considéré que sur son plan affectif, social et cognitif 
-              et des outils dont il dispose pour évoluer dans son environnement.
+              Elle cherche donc à comprendre l&apos;organisation psychique d&apos;un individu, et son évolution dans le temps. Le psychologue du développement s&apos;intéresse à la manière dont un individu s&apos;est construit sur les plans affectif, social et cognitif, et aux outils dont il dispose pour évoluer dans son environnement.
+            </p>
+            <p>
+              
             </p>
           </div>
           <div className={styles.professional__column}>
@@ -126,10 +113,12 @@ export default function Home() {
             </p>
             <p>
               En tant que membre du Registre de Santé, mon numéro RPPS est le 10089531727, 
-              mon numéro numéro ADELI est le 359154141.
+              mon numéro numéro ADELI est le 359154141.<br />
+              <a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener noreferrer">https://www.occitanie.ars.sante.fr/</a> 
             </p>
             <p>
-              Je travaille dans le respect du Code de Déontologie des Psychologues.
+              Je travaille dans le respect du Code de Déontologie des Psychologues.<br />
+              <a href="http://www.codededeontologiedespsychologues.fr/" target="_blank" rel="noopener noreferrer">http://www.codededeontologiedespsychologues.fr/</a>
             </p>
             <p>
               Je travaille également avec d&apos;autres professionnels des communes 
