@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
 import { Testimonials } from '@/components/Testimonials/Testimonials';
+import { ExternalLink } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/psychologie"
               title="La Psychologie"
-              imgSrc="/images/adultes.jpg"
+              imgSrc="/images/Psychologue-et-enfant-1.jpg"
               width={300}
               height={250}
               alt=""
@@ -44,7 +45,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/sophrologie"
               title="La Sophrologie"
-              imgSrc="/images/adultes.jpg"
+              imgSrc="/images/Zenitude.jpg"
               width={300}
               height={250}
               alt=""
@@ -55,7 +56,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/bilan-psychologique"
               title="Bilans"
-              imgSrc="/images/adultes.jpg"
+              imgSrc="/images/Famille.jpg"
               width={300}
               height={250}
               alt=""
@@ -66,7 +67,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/honoraires-et-contact"
               title="Contact"
-              imgSrc="/images/adultes.jpg"
+              imgSrc="/images/Solidaire.jpg"
               width={300}
               height={250}
               alt=""
@@ -82,7 +83,7 @@ export default function Home() {
             <h3>Mon parcours professionnel</h3>
             <p>
               Spécialisée dans le développement, je suis diplômée d&apos;un Master professionnel de Psychologie du développement de l&apos;enfant et de l&apos;adolescent obtenu à l&apos;Université de Basse Normandie à Caen. Je suis également diplômée en Sophrologie et inscrit au Répertoire National des Certifications professionnelles.<br />
-              <a href="http://www.cncp.gouv.fr/" target="_blank" rel="noopener noreferrer">http://www.cncp.gouv.fr/</a>
+              <a href="http://www.cncp.gouv.fr/" target="_blank" rel="noopener noreferrer">http://www.cncp.gouv.fr/ <ExternalLink size={16} aria-hidden="true" /></a>
             </p>
             <p>
               De part ma formation et ma pratique, je considère la personne dans sa globalité et tiens compte des contextes au sein desquels elle évolue afin de soutenir l&apos;émergence de ses capacités, de favoriser son autonomie et son mieux-être. L&apos;intégration de la sphère familiale, sociale et scolaire/professionnelle de la personne, constitue à mon sens un point central de la prise en charge psychologique.
@@ -112,11 +113,11 @@ export default function Home() {
             <p>
               En tant que membre du Registre de Santé, mon numéro RPPS est le 10089531727, 
               mon numéro numéro ADELI est le 359154141.<br />
-              <a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener noreferrer">https://www.occitanie.ars.sante.fr/</a> 
+              <a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener noreferrer">https://www.occitanie.ars.sante.fr/ <ExternalLink size={16} aria-hidden="true" /></a> 
             </p>
             <p>
               Je travaille dans le respect du Code de Déontologie des Psychologues.<br />
-              <a href="http://www.codededeontologiedespsychologues.fr/" target="_blank" rel="noopener noreferrer">http://www.codededeontologiedespsychologues.fr/</a>
+              <a href="http://www.codededeontologiedespsychologues.fr/" target="_blank" rel="noopener noreferrer">http://www.codededeontologiedespsychologues.fr/ <ExternalLink size={16} aria-hidden="true" /></a>
             </p>
             <p>
               Je travaille également avec d&apos;autres professionnels des communes 
