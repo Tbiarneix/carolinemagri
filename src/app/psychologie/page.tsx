@@ -9,7 +9,7 @@ export default function PsychologyPage() {
       </section>
 
       <section id="consultation">
-        <h2>Pourquoi et qui consulter ?</h2>
+        <h2>Pourquoi et qui consulter&nbsp;?</h2>
         <p>
           Il existe de nombreuses difficultés qui peuvent être un motif de consultations à différents moments de votre vie, au sein à l&apos;écoute de vos demandes et de vos besoins afin de vous accompagner au mieux vers un équilibre personnel et/ou professionnel.
         </p>
@@ -78,7 +78,7 @@ export default function PsychologyPage() {
       </section>
 
       <section id="differences">
-        <h2>Quelles différences entre tous ces « psy » ?</h2>
+        <h2>Quelles différences entre tous ces «&nbsp;psy&nbsp;»&nbsp;?</h2>
         <div className="content-block">
           <p>
             Psychologue, psychiatre, psychothérapeute, sophrologue... À qui s&apos;adresser ?

@@ -46,3 +46,16 @@
       border-radius: 50% !important;
     }
   }
+
+  @media (max-width: 1024px) {
+    .button {
+      background-color: transparent !important;
+      color: var(--pastel-dark) !important;
+      border: 2px solid var(--pastel-dark) !important;
+    }
+
+    .button:hover {
+      background-color: var(--pastel-dark) !important;
+      color: white !important;
+    }
+  }
