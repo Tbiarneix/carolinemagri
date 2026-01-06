@@ -55,9 +55,7 @@ export const Navigation = () => {
     }
 
     return () => {
-      document.removeEventListener("keydown", (e) => {
-        if (e.key === "Tab") handleTabKey(e);
-      });
+      document.removeEventListener("keydown", handleTabKey);
       document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen, handleTabKey]);
@@ -77,7 +75,7 @@ export const Navigation = () => {
   }, [isOpen]);
 
   return (
-    <nav className={styles.nav} role="navigation" aria-label="Menu principal" id="main-navigation">
+    <nav className={styles.nav} role="navigation" aria-label="Menu principal" id="main-navigation" tabIndex={-1}>
       <div className={styles.logo}>
         <Link onClick={() => setIsOpen(false)} href="/" aria-label="Aller à la page d'accueil">
           <Image

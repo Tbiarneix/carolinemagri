@@ -5,7 +5,7 @@ import styles from "./SkipLink.module.css";
 
 export const SkipLink = () => {
   const handleNavigationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (window.innerWidth > 1025) {
+    if (window.innerWidth > 1024) {
       e.preventDefault();
       const nav = document.getElementById('mainMenu');
       if (nav) {
@@ -17,7 +17,7 @@ export const SkipLink = () => {
         }
       }
     }
-    if (window.innerWidth <= 1025) {
+    if (window.innerWidth <= 1024) {
       e.preventDefault();
       const menuButton = document.querySelector('button[aria-controls="mainMenu"]');
       if (menuButton instanceof HTMLElement) {
@@ -36,7 +36,7 @@ export const SkipLink = () => {
           <a href="#main-content">Aller au contenu</a>
         </li>
         <li>
-          <Link href="/sitemap">Aller au plan du site</Link>
+          <Link href="#footer-sitemap">Aller au plan du site</Link>
         </li>
       </ul>
     </nav>

@@ -25,7 +25,7 @@ export const Footer = () => {
         
         <div className={styles.rightSection}>
           <div>
-            <h3>Plan du site</h3>
+            <h3 id="footer-sitemap">Plan du site</h3>
             <ul className={styles.siteMap}>
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/psychologie">La psychologie</Link></li>
