@@ -47,7 +47,7 @@ export const Footer = () => {
       </div>
       
       <div className={styles.copyright}>
-        © {currentYear} Caroline Magri - Tous droits réservés - Réalisation <Link href="https://www.thomasbiarneix.com/" target="_blank" rel="noopener noreferrer">Thomas Biarneix</Link>
+        © {currentYear} Caroline Magri - Tous droits réservés - Réalisation <Link href="https://www.thomasbiarneix.com/" target="_blank" rel="noopener noreferrer">Thomas Biarneix</Link> - Numéro RPPS 10009652727
       </div>
     </footer>
   );
