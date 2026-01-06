@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.leftSection}>
           <Image
-            src="/images/logo-full.png"
+            src="/images/logo-full-blanc.png"
             alt=""
             width={250}
             height={165}

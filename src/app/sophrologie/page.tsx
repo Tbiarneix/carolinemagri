@@ -2,12 +2,12 @@ import styles from './page.module.css';
 
 export default function SophrologiePage() {
   return (
-    <div className={styles.sophrologiePage}>
-      <section className={styles.hero}>
+    <div className="page-container">
+      <section className="page-hero">
         <h1>La Sophrologie</h1>
       </section>
 
-      <section id="definition" className={styles.consultation}>
+      <section id="definition">
         <h2>Qu&apos;est-ce que la sophrologie ?</h2>
         <p>
           La sophrologie est une méthode psychocorporelle qui vise à renforcer l&apos;équilibre entre les émotions, les pensées et le corps. Elle utilise des techniques de relaxation, de respiration et de visualisation positive.
@@ -17,9 +17,9 @@ export default function SophrologiePage() {
         </p>
       </section>
 
-      <section id="bienfaits" className={styles.process}>
+      <section id="bienfaits">
         <h2>Les bienfaits de la sophrologie</h2>
-        <div className={styles.processContent}>
+        <div className="content-block">
           <p>
             La sophrologie peut vous aider dans de nombreuses situations :
           </p>
@@ -34,9 +34,9 @@ export default function SophrologiePage() {
         </div>
       </section>
 
-      <section id="deroulement" className={styles.differences}>
+      <section id="deroulement">
         <h2>Déroulement d&apos;une séance</h2>
-        <div className={styles.differencesContent}>
+        <div className="content-block">
           <p>
             Une séance de sophrologie dure généralement entre 45 minutes et 1 heure. Elle se déroule en plusieurs étapes :
           </p>

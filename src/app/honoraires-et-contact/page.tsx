@@ -2,12 +2,12 @@ import styles from './page.module.css';
 
 export default function HonorairesContactPage() {
   return (
-    <div className={styles.honorairesPage}>
-      <section className={styles.hero}>
+    <div className="page-container">
+      <section className="page-hero">
         <h1>Honoraires et Contact</h1>
       </section>
 
-      <section id="honoraires" className={styles.consultation}>
+      <section id="honoraires">
         <h2>Honoraires</h2>
         <p>
           Les séances de psychologie ne sont pas remboursées par la Sécurité Sociale. Cependant, de nombreuses mutuelles proposent un remboursement partiel ou total des consultations. N&apos;hésitez pas à vous renseigner auprès de votre mutuelle.
@@ -31,9 +31,9 @@ export default function HonorairesContactPage() {
         </div>
       </section>
 
-      <section id="contact" className={styles.process}>
+      <section id="contact">
         <h2>Contact</h2>
-        <div className={styles.processContent}>
+        <div className="content-block">
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <h3>Adresse du cabinet</h3>
@@ -51,9 +51,9 @@ export default function HonorairesContactPage() {
         </div>
       </section>
 
-      <section id="rdv" className={styles.differences}>
+      <section id="rdv">
         <h2>Prendre rendez-vous</h2>
-        <div className={styles.differencesContent}>
+        <div className="content-block">
           <p>
             Vous pouvez prendre rendez-vous par téléphone ou par email. Je vous répondrai dans les plus brefs délais.
           </p>

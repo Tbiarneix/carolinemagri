@@ -3,12 +3,12 @@ import styles from './page.module.css';
 
 export default function PsychologyPage() {
   return (
-    <div className={styles.psychologyPage}>
-      <section className={styles.hero}>
+    <div className="page-container">
+      <section className="page-hero">
         <h1>La Psychologie</h1>
       </section>
 
-      <section id="consultation" className={styles.consultation}>
+      <section id="consultation">
         <h2>Pourquoi et qui consulter ?</h2>
         <p>
           Il existe de nombreuses difficultés qui peuvent être un motif de consultations à différents moments de votre vie, au sein à l&apos;écoute de vos demandes et de vos besoins afin de vous accompagner au mieux vers un équilibre personnel et/ou professionnel.
@@ -52,9 +52,9 @@ export default function PsychologyPage() {
         </div>
       </section>
 
-      <section id="process" className={styles.process}>
+      <section id="process">
         <h2>Déroulement d&apos;un suivi</h2>
-        <div className={styles.processContent}>
+        <div className="content-block">
           <p>
             La première séance est là pour nous permettre de prendre contact, de commencer à nous connaître. Vous me ferez part de vos demandes, vos besoins, les raisons qui vous poussent à venir voir un psychologue et vos attentes.
           </p>
@@ -77,9 +77,9 @@ export default function PsychologyPage() {
         </div>
       </section>
 
-      <section id="differences" className={styles.differences}>
+      <section id="differences">
         <h2>Quelles différences entre tous ces « psy » ?</h2>
-        <div className={styles.differencesContent}>
+        <div className="content-block">
           <p>
             Psychologue, psychiatre, psychothérapeute, sophrologue... À qui s&apos;adresser ?
           </p>

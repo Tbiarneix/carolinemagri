@@ -1,13 +1,11 @@
-import styles from './page.module.css';
-
 export default function CpimPage() {
   return (
-    <div className={styles.cpimPage}>
-      <section className={styles.hero}>
+    <div className="page-container">
+      <section className="page-hero">
         <h1>CPIM</h1>
       </section>
 
-      <section id="definition" className={styles.consultation}>
+      <section id="definition">
         <h2>Qu&apos;est-ce que le CPIM ?</h2>
         <p>
           Le CPIM (Cycle Psychologique d&apos;Intégration par le Mouvement) est une approche thérapeutique innovante qui combine les processus psychologiques avec le mouvement corporel.
@@ -17,9 +15,9 @@ export default function CpimPage() {
         </p>
       </section>
 
-      <section id="pour-qui" className={styles.process}>
+      <section id="pour-qui">
         <h2>À qui s&apos;adresse le CPIM ?</h2>
-        <div className={styles.processContent}>
+        <div className="content-block">
           <p>
             Le CPIM peut être bénéfique pour :
           </p>
@@ -32,9 +30,9 @@ export default function CpimPage() {
         </div>
       </section>
 
-      <section id="deroulement" className={styles.differences}>
+      <section id="deroulement">
         <h2>Déroulement d&apos;une séance</h2>
-        <div className={styles.differencesContent}>
+        <div className="content-block">
           <ul>
             <li>
               <strong>Accueil et écoute</strong> de vos besoins et de votre état du moment.

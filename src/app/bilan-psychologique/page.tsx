@@ -1,13 +1,11 @@
-import styles from './page.module.css';
-
 export default function BilanPsychologiquePage() {
   return (
-    <div className={styles.bilanPage}>
-      <section className={styles.hero}>
+    <div className="page-container">
+      <section className="page-hero">
         <h1>Bilan Psychologique</h1>
       </section>
 
-      <section id="definition" className={styles.consultation}>
+      <section id="definition">
         <h2>Qu&apos;est-ce qu&apos;un bilan psychologique ?</h2>
         <p>
           Le bilan psychologique est une évaluation approfondie des capacités cognitives, émotionnelles et comportementales d&apos;une personne. Il permet de mieux comprendre le fonctionnement intellectuel et psychologique.
@@ -17,9 +15,9 @@ export default function BilanPsychologiquePage() {
         </p>
       </section>
 
-      <section id="pour-qui" className={styles.process}>
+      <section id="pour-qui">
         <h2>Pour qui ?</h2>
-        <div className={styles.processContent}>
+        <div className="content-block">
           <p>
             Le bilan psychologique peut être proposé à différents publics :
           </p>
@@ -34,9 +32,9 @@ export default function BilanPsychologiquePage() {
         </div>
       </section>
 
-      <section id="deroulement" className={styles.differences}>
+      <section id="deroulement">
         <h2>Déroulement du bilan</h2>
-        <div className={styles.differencesContent}>
+        <div className="content-block">
           <ul>
             <li>
               <strong>Entretien préalable</strong> permettant de recueillir l&apos;histoire de vie, les difficultés rencontrées et les attentes.
