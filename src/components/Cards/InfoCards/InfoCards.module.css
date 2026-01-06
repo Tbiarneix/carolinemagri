@@ -23,8 +23,9 @@
 
 .imageWrapper {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -40,4 +41,18 @@
 
 .imageCard:hover .image {
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .imageCard {
+    padding: 1rem;
+  }
+
+  .imageCard li {
+    margin-left: 1rem;
+  }
+
+  .imageWrapper {
+    max-width: 200px;
+  }
 }

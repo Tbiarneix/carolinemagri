@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import { LinkCards, Theme } from '@/components/Cards/LinkCards/LinkCards';
 import { Testimonials } from '@/components/Testimonials/Testimonials';
 import { ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -9,10 +10,19 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.hero__content}>
           <div className={styles.hero__presentation}>
-            <h1 className={styles.hero__title}>
-              Caroline Magri
-              <span className={styles.hero__subtitle}>Psychologue et Sophrologue</span>
-            </h1>
+            <div className={styles.hero__presentation__title}>
+              <h1 className={styles.hero__title}>
+                Caroline Magri
+                <span className={styles.hero__subtitle}>Psychologue et Sophrologue</span>
+              </h1>
+              <Image 
+                src="/images/Psychologie.jpg" 
+                alt="" 
+                width={300} 
+                height={225}
+                style={{ borderRadius: '12px' }}
+              />
+            </div>
             <div>
               <h2>Bienvenue</h2>
               <p>

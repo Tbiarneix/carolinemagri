@@ -23,6 +23,11 @@
     flex: 1;
   }
 
+  .hero__presentation__title {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero__subtitle {
     display: block;
     font-size: 2rem;

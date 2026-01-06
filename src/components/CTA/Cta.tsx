@@ -20,7 +20,7 @@ export const Cta = () => {
 
   return (
     <a 
-      href="#contact" 
+      href="https://perfactive.fr/caroline-magri/book" 
       className={styles.button}
       aria-label={isCompactView ? 'Prendre rendez-vous' : undefined}
     >

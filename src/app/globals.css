@@ -150,12 +150,17 @@ a:focus::after {
 }
 
 .content-block ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 .content-block li {
   margin-bottom: 1rem;
+}
+
+.no-bullets {
+  list-style: none !important;
+  padding-left: 0 !important;
 }
 
 .content-block strong {
@@ -212,12 +217,13 @@ a:focus::after {
   }
 
   h2 {
+    margin-top: 3rem;
     font-size: 1.5rem;
   }
 
   .page-hero {
-    padding: 3rem 1rem;
-  }
+    padding-top: 6rem;
+}
 
   .page-hero h1 {
     font-size: 2rem;
