@@ -110,13 +110,13 @@ export const Navigation = () => {
           <Link href="/sophrologie" className={pathname === '/sophrologie' ? styles.active : ''}>La Sophrologie</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/bilan-psychologique" className={pathname === '/bilan-psychologique' ? styles.active : ''}>Bilan psychologique</Link>
+          <Link href="/bilan-psychologique" className={`${styles.wrapText} ${pathname === '/bilan-psychologique' ? styles.active : ''}`}>Bilan psychologique</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
           <Link href="/cpim" className={pathname === '/cpim' ? styles.active : ''}>CPIM</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/honoraires-et-contact" className={pathname === '/honoraires-et-contact' ? styles.active : ''}>Honoraires et contact</Link>
+          <Link href="/honoraires-et-contact" className={`${styles.wrapText} ${pathname === '/honoraires-et-contact' ? styles.active : ''}`}>Honoraires et contact</Link>
         </li>
         <li className={styles.inMenuCta}>
           <Cta />

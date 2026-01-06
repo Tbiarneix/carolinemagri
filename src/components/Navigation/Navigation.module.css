@@ -13,10 +13,16 @@
   text-decoration: none;
 }
 
+.logo a::after,
+.menuItems a::after {
+  display: none;
+}
+
 .menuItems {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -26,9 +32,10 @@
   color: #333;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .menuItems a:hover {
@@ -45,6 +52,19 @@
 .menuItems a:active {
   color: #fff;
   background-color: var(--pastel-dark);
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .menuItems a.wrapText {
+    white-space: normal;
+    text-align: center;
+    max-width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+  }
 }
 
 .menuButton {
