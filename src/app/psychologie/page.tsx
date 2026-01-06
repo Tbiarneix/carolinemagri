@@ -1,6 +1,12 @@
 import { InfoCards } from '@/components/Cards/InfoCards/InfoCards';
 import styles from './page.module.css';
 import shared from "../shared.module.css";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "La Psychologie",
+  description: "Accompagnement psychologique pour enfants, adolescents, adultes et familles à Pinsaguel. Consultations individuelles, familiales et de couple.",
+};
 
 export default function PsychologyPage() {
   return (

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import shared from "../shared.module.css";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "La Sophrologie",
+  description: "Séances de sophrologie à Pinsaguel pour gérer le stress, améliorer le sommeil et retrouver l'équilibre. Pour enfants, adolescents et adultes.",
+};
 
 export default function SophrologiePage() {
   return (

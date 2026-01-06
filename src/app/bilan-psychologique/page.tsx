@@ -1,5 +1,11 @@
 import shared from "../shared.module.css";
 import Image from "next/image";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Bilan Psychologique",
+  description: "Bilan psychologique WISC-V pour enfants et adolescents de 6 à 16 ans à Pinsaguel. Évaluation cognitive et projective avec compte-rendu détaillé.",
+};
 
 export default function BilanPsychologiquePage() {
   return (

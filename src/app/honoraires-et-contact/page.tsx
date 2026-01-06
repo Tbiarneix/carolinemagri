@@ -2,6 +2,12 @@ import styles from './page.module.css';
 import shared from "../shared.module.css";
 import { InfoCards } from '@/components/Cards/InfoCards/InfoCards';
 import { ExternalLink } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Honoraires et Contact",
+  description: "Tarifs des consultations et coordonnées du cabinet de psychologie et sophrologie à Pinsaguel. Prise de rendez-vous en ligne.",
+};
 
 export default function HonorairesContactPage() {
   return (
