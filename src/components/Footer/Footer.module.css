@@ -101,6 +101,11 @@
 
     gap: 1rem;
   }
+
+  .rightSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
   
   .siteMap {
     display: flex;
