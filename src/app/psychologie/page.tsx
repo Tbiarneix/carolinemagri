@@ -18,7 +18,7 @@ export default function PsychologyPage() {
         </p>
 
         <div className={styles.imageGrid}>
-          <InfoCards title="De la petite enfance à l&apos;adolescence" imgSrc="/images/enfants.jpg">
+          <InfoCards title="De la petite enfance à l&apos;adolescence" imgSrc="/images/Enfance-adolescence.jpg">
             <ul>
               <li>Naissance difficile</li>
               <li>Bébé ou enfant angoissé</li>
@@ -30,7 +30,7 @@ export default function PsychologyPage() {
             </ul>
           </InfoCards>
 
-          <InfoCards title="Couples et familles" imgSrc="/images/couples.jpg">
+          <InfoCards title="Couples et familles" imgSrc="/images/Couple-hetero.jpg">
             <ul>
               <li>Accompagnement à la parentalité</li>
               <li>Difficultés d&apos;autorité</li>
@@ -40,7 +40,7 @@ export default function PsychologyPage() {
             </ul>
           </InfoCards>
 
-          <InfoCards title="Adultes" imgSrc="/images/adultes.jpg">
+          <InfoCards title="Adultes" imgSrc="/images/Femme.jpg">
             <ul>
               <li>Difficultés professionnelles</li>
               <li>Expériences difficiles</li>
