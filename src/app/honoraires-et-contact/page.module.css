@@ -26,14 +26,24 @@
   margin-bottom: 0.5rem;
 }
 
-.contactInfo {
+.contactSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
+  margin-top: 2rem;
+  background: var(--background-linear);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contactItem {
-  text-align: center;
+  text-align: left;
 }
 
 .contactItem h3 {
@@ -41,12 +51,36 @@
   color: var(--pastel-dark);
 }
 
+.contactItem p {
+  margin-bottom: 0.25rem;
+}
+
+.contactMap {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.contactItem p {
+  margin-bottom: 0.25rem;
+}
+
+.contactMap {
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
 @media (max-width: 768px) {
   .tarifs {
     grid-template-columns: 1fr;
   }
 
-  .contactInfo {
+  .contactSection {
     grid-template-columns: 1fr;
+  }
+
+  .contactMap {
+    min-height: 250px;
   }
 }

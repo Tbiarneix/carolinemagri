@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 
 interface InfoCardsProps {
   children: ReactNode;
-  imgSrc: string;
+  imgSrc?: string;
   imgAlt?: string;
   title: string;
   width?: number;
@@ -16,15 +16,17 @@ export const InfoCards = ({ children, imgSrc, imgAlt, title, width = 300, height
   
     return (
     <div className={styles.imageCard}>
-      <div className={styles.imageWrapper}>
-        <Image
-          src={imgSrc}
-          alt={alt}
-          width={width}
-          height={height}
-          className={styles.image}
-        />
-      </div>
+      {imgSrc && (
+        <div className={styles.imageWrapper}>
+          <Image
+            src={imgSrc}
+            alt={alt}
+            width={width}
+            height={height}
+            className={styles.image}
+          />
+        </div>
+      )}
       <h3>{title}</h3>
       {children}
     </div>

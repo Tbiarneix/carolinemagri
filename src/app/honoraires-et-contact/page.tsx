@@ -1,5 +1,7 @@
 import styles from './page.module.css';
 import shared from "../shared.module.css";
+import { InfoCards } from '@/components/Cards/InfoCards/InfoCards';
+import { ExternalLink } from 'lucide-react';
 
 export default function HonorairesContactPage() {
   return (
@@ -10,44 +12,70 @@ export default function HonorairesContactPage() {
 
       <section id="honoraires">
         <h2>Honoraires</h2>
-        <p>
-          Les séances de psychologie ne sont pas remboursées par la Sécurité Sociale. Cependant, de nombreuses mutuelles proposent un remboursement partiel ou total des consultations. N&apos;hésitez pas à vous renseigner auprès de votre mutuelle.
-        </p>
         <div className={styles.tarifs}>
-          <div className={styles.tarif}>
-            <h3>Consultation individuelle</h3>
-            <p className={styles.prix}>60 €</p>
-            <p>Durée : 45 minutes à 1 heure</p>
-          </div>
-          <div className={styles.tarif}>
-            <h3>Consultation couple/famille</h3>
-            <p className={styles.prix}>80 €</p>
-            <p>Durée : 1 heure à 1h30</p>
-          </div>
-          <div className={styles.tarif}>
-            <h3>Bilan psychologique</h3>
-            <p className={styles.prix}>Sur devis</p>
-            <p>Comprend les entretiens, la passation et le compte-rendu</p>
-          </div>
+          <InfoCards title="Séance individuelle">
+            <p className={styles.prix}>55 €</p>
+            <p>Accompagnement individuel pour enfants, adolescents et adultes.</p>
+          </InfoCards>
+          <InfoCards title="Séance familliale">
+            <p className={styles.prix}>65 €</p>
+            <p>Accompagnement familial, parental et conjugal.</p>
+          </InfoCards>
+          <InfoCards title="Consultation à domicile">
+            <p className={styles.prix}>+ 15 €</p>
+            <p>A ajouter aux tarifs des séances. Dans un rayon de 5 km autour de Pinsaguel (31120)</p>
+          </InfoCards>
+          <InfoCards title="Bilan cognitif et projectif">
+            <p className={styles.prix}>300 €</p>
+            <p>Forfait de 5 séances comprenant passation + analyse + restitution</p>
+          </InfoCards>
+          <InfoCards title="Bilan cognitif ">
+            <p className={styles.prix}>280 €</p>
+            <p>Forfait de 4 séances comprenant passation + analyse + restitution</p>
+          </InfoCards>
+          <InfoCards title="Séance de sophrologie">
+            <p className={styles.prix}>55 €</p>
+            <p>Accompagnement individuel pour enfants, adolescents et adultes.</p>
+          </InfoCards>
         </div>
+        <br />
+        <p>Le <b>règlement</b> se fait à chaque séance en <b>espèces</b> ou en <b>chèque</b>. Pensez à vous munir d&apos;un moyen de paiement.</p>
+        <p>Je ne suis <b>pas conventionnée Mon Parcours Psy</b> (parcours gouvernemental). Pour en comprendre les raisons (si vous le souhaitez), je vous invite à lire <a href="https://associationm3p-psychologues.fr/une-escroquerie-nommee-monpsy-article-du-co-dirigeant-de-lassociation-m3p-lionel-camalet/">cet article <ExternalLink size={16} aria-hidden="true" /></a>.</p>
+        <p>Il peut arriver à tout le monde d&apos;oublier un rendez-vous (à moi aussi d&apos;ailleurs). Toutefois le nombre de rendez-vous manqués augmente et entraine divers désgraments pour vous, pour d&apos;autres patients et pour mon activité.</p>
+        <p>En cas d&apos;impossibilité, je vous demande un <b>appel</b> ou un <b>mail</b>, <b>48h à l&apos;avance</b>, ce qui peut permettre à d&apos;autres patients de bénéficier du créneau.</p>
+        <p>Donc pour les <b>RENDEZ-VOUS NON HONORES</b> : le tarif de la séance <b>sera facturé</b> lors de la séance suivante.</p>
+        <p>Les séances de psychologie et de sophrologie ne sont pas prises en charge par la Sécurité Sociale. Cependant, certaines mutuelles remboursent quelques séances par an. Je vous délivrerai une facture de chaque séance pour vous permettre de leur envoyer. N&apos;hésitez pas à vous renseigner auprès de votre mutuelle.</p>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <div className={shared.contentBlock}>
-          <div className={styles.contactInfo}>
+        <div className={styles.contactSection}>
+          <div className={styles.contactDetails}>
             <div className={styles.contactItem}>
               <h3>Adresse du cabinet</h3>
-              <p>123 Rue Exemple<br />75000 Paris</p>
+              <p>1 Rue Théodore Monod<br />31120 Pinsaguel</p>
+              <p>Facilités d&apos;accès : Parking en face du cabinet</p>
             </div>
             <div className={styles.contactItem}>
               <h3>Téléphone</h3>
-              <p>06 00 00 00 00</p>
+              <p><a href="tel:0562486421">05.62.48.64.21 <ExternalLink size={16} aria-hidden="true" /></a></p>
             </div>
             <div className={styles.contactItem}>
               <h3>Email</h3>
-              <p>contact@exemple.fr</p>
+              <p><a href="mailto:caroline.magri@gmail.com">caroline.magri@gmail.com <ExternalLink size={16} aria-hidden="true" /></a></p>
             </div>
+          </div>
+          <div className={styles.contactMap}>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.8!2d1.3869!3d43.5089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1+Rue+Th%C3%A9odore+Monod%2C+31120+Pinsaguel!5e0!3m2!1sfr!2sfr!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0, borderRadius: '12px', minHeight: '300px' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation du cabinet"
+            />
           </div>
         </div>
       </section>
@@ -56,10 +84,7 @@ export default function HonorairesContactPage() {
         <h2>Prendre rendez-vous</h2>
         <div className={shared.contentBlock}>
           <p>
-            Vous pouvez prendre rendez-vous par téléphone ou par email. Je vous répondrai dans les plus brefs délais.
-          </p>
-          <p>
-            Les consultations se font uniquement sur rendez-vous.
+            Vous pouvez prendre rendez-vous sur ma page Perfactive <a href="https://perfactive.fr/caroline-magri/book" target="_blank" rel="noopener noreferrer">https://perfactive.fr/ <ExternalLink size={16} aria-hidden="true" /></a>
           </p>
         </div>
       </section>

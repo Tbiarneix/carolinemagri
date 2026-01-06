@@ -112,9 +112,9 @@ export const Navigation = () => {
         <li onClick={() => setIsOpen(false)}>
           <Link href="/bilan-psychologique" className={`${styles.wrapText} ${pathname === '/bilan-psychologique' ? styles.active : ''}`}>Bilan psychologique</Link>
         </li>
-        <li onClick={() => setIsOpen(false)}>
+        {/* <li onClick={() => setIsOpen(false)}>
           <Link href="/cpim" className={pathname === '/cpim' ? styles.active : ''}>CPIM</Link>
-        </li>
+        </li> */}
         <li onClick={() => setIsOpen(false)}>
           <Link href="/honoraires-et-contact" className={`${styles.wrapText} ${pathname === '/honoraires-et-contact' ? styles.active : ''}`}>Honoraires et contact</Link>
         </li>
