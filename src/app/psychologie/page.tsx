@@ -66,7 +66,7 @@ export default function PsychologyPage() {
             En fin de séance, je vous proposerai un suivi adapté à votre demande, à vos besoins et à vos difficultés ainsi que les modalités d&apos;organisation des séances. Ce ne sont que des propositions, vous serez être sujet à discussion.
           </p>
           <p>
-            Cette première rencontre n&apos;est pas un engagement. Vous êtes libre de poursuivre avec moi ou pas et être en route professionnel proposant une pratique différente, si vous ne vous sentez pas à l&apos;aise. Si le cadre de travail proposé ne vous convenait pas, n&apos;hésitez surtout pas à m'en parler.
+            Cette première rencontre n&apos;est pas un engagement. Vous êtes libre de poursuivre avec moi ou pas et être en route professionnel proposant une pratique différente, si vous ne vous sentez pas à l&apos;aise. Si le cadre de travail proposé ne vous convenait pas, n&apos;hésitez surtout pas à m&apos;en parler.
           </p>
           <p>
             Pour la suite, des objectifs seront fixés ensemble en début de suivi. <br/>
