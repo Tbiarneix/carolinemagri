@@ -121,8 +121,7 @@ export default function Home() {
               et adolescents) et un suivi sophrologique.
             </p>
             <p>
-              En tant que membre du Registre de Santé, mon numéro RPPS est le 10089531727, 
-              mon numéro numéro ADELI est le 359154141.<br />
+              En tant que membre du Registre de Santé, mon numéro RPPS est le 10009652727.<br />
               <a href="https://www.occitanie.ars.sante.fr/" target="_blank" rel="noopener noreferrer">https://www.occitanie.ars.sante.fr/ <ExternalLink size={16} aria-hidden="true" /></a> 
             </p>
             <p>

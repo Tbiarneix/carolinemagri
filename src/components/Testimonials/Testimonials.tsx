@@ -93,7 +93,7 @@ export const Testimonials = () => {
           disabled={!canScrollLeft}
           aria-label="Voir les avis précédents"
         >
-          <ChevronLeft />
+          <ChevronLeft aria-hidden="true" />
         </button>
         <button
           onClick={() => handleManualScroll('right')}
@@ -101,7 +101,7 @@ export const Testimonials = () => {
           disabled={!canScrollRight}
           aria-label="Voir les avis suivants"
         >
-          <ChevronRight />
+          <ChevronRight aria-hidden="true" />
         </button>
       </div>
       <footer className={styles.testimonials__footer}>

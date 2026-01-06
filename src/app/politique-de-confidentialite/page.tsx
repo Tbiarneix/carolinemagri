@@ -48,7 +48,7 @@ export default function PolitiqueDeConfidentialitePage() {
       <section>
         <h2>Responsable du traitement des données</h2>
         <p>
-          La responsable des données à caractère personnel est Caroline Magri. Vous pouvez la contacter par mail <Link href="mailto:contact@carolinemagri.fr">contact@carolinemagri.fr <ExternalLinkIcon size={16} aria-hidden="true" /></Link>.
+          La responsable des données à caractère personnel est Caroline Magri. Vous pouvez la contacter par mail <Link href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" /></Link>.
         </p>
         <p>
           La responsable du traitement des données s&apos;engage à protéger au mieux les données, à ne pas les transmettre à des tiers sans que vous en soyez informé et à respecter les finalités pour lesquelles ces données ont été collectées.
@@ -73,7 +73,7 @@ export default function PolitiqueDeConfidentialitePage() {
           <li>Droit de saisir l&apos;autorité de contrôle compétente (la CNIL)</li>
         </ul>
         <p>
-          Pour faire valoir vos droits, vous pouvez le faire à l&apos;adresse <Link href="mailto:contact@carolinemagri.fr">contact@carolinemagri.fr <ExternalLinkIcon size={16} aria-hidden="true" /></Link> en précisant vos coordonnées (Prénom, Nom, e-mail) et l&apos;objet de votre demande.
+          Pour faire valoir vos droits, vous pouvez le faire à l&apos;adresse <Link href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" /></Link> en précisant vos coordonnées (Prénom, Nom, e-mail) et l&apos;objet de votre demande.
         </p>
       </section>
 

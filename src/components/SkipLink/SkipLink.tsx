@@ -36,7 +36,14 @@ export const SkipLink = () => {
           <a href="#main-content">Aller au contenu</a>
         </li>
         <li>
-          <Link href="#footer-sitemap">Aller au plan du site</Link>
+          <a href="#footer-sitemap" onClick={(e) => {
+            e.preventDefault();
+            const sitemap = document.getElementById('footer-sitemap');
+            if (sitemap) {
+              sitemap.scrollIntoView({ behavior: 'smooth' });
+              sitemap.focus();
+            }
+          }}>Aller au plan du site</a>
         </li>
       </ul>
     </nav>

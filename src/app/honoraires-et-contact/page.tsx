@@ -12,32 +12,44 @@ export default function HonorairesContactPage() {
 
       <section id="honoraires">
         <h2>Honoraires</h2>
-        <div className={styles.tarifs}>
+        <ul className={styles.tarifs}>
+          <li>
           <InfoCards title="Séance individuelle">
             <p className={styles.prix}>55 €</p>
             <p>Accompagnement individuel pour enfants, adolescents et adultes.</p>
           </InfoCards>
+          </li>
+          <li>
           <InfoCards title="Séance familliale">
             <p className={styles.prix}>65 €</p>
             <p>Accompagnement familial, parental et conjugal.</p>
           </InfoCards>
+          </li>
+          <li>
           <InfoCards title="Consultation à domicile">
             <p className={styles.prix}>+ 15 €</p>
-            <p>A ajouter aux tarifs des séances. Dans un rayon de 5 km autour de Pinsaguel (31120)</p>
+            <p>A ajouter aux tarifs des séances. Dans un rayon de 5 km.</p>
           </InfoCards>
+          </li>
+          <li>
           <InfoCards title="Bilan cognitif et projectif">
             <p className={styles.prix}>300 €</p>
             <p>Forfait de 5 séances comprenant passation + analyse + restitution</p>
           </InfoCards>
+          </li>
+          <li>
           <InfoCards title="Bilan cognitif ">
             <p className={styles.prix}>280 €</p>
             <p>Forfait de 4 séances comprenant passation + analyse + restitution</p>
           </InfoCards>
+          </li>
+          <li>
           <InfoCards title="Séance de sophrologie">
             <p className={styles.prix}>55 €</p>
             <p>Accompagnement individuel pour enfants, adolescents et adultes.</p>
           </InfoCards>
-        </div>
+          </li>
+        </ul>
         <br />
         <p>Le <b>règlement</b> se fait à chaque séance en <b>espèces</b> ou en <b>chèque</b>. Pensez à vous munir d&apos;un moyen de paiement.</p>
         <p>Je ne suis <b>pas conventionnée Mon Parcours Psy</b> (parcours gouvernemental). Pour en comprendre les raisons (si vous le souhaitez), je vous invite à lire <a href="https://associationm3p-psychologues.fr/une-escroquerie-nommee-monpsy-article-du-co-dirigeant-de-lassociation-m3p-lionel-camalet/">cet article <ExternalLink size={16} aria-hidden="true" /></a>.</p>
@@ -62,15 +74,12 @@ export default function HonorairesContactPage() {
             </div>
             <div className={styles.contactItem}>
               <h3>Email</h3>
-              <p><a href="mailto:caroline.magri@gmail.com">caroline.magri@gmail.com <ExternalLink size={16} aria-hidden="true" /></a></p>
+              <p><a href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLink size={16} aria-hidden="true" /></a></p>
             </div>
           </div>
           <div className={styles.contactMap}>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.8!2d1.3869!3d43.5089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1+Rue+Th%C3%A9odore+Monod%2C+31120+Pinsaguel!5e0!3m2!1sfr!2sfr!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0, borderRadius: '12px', minHeight: '300px' }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

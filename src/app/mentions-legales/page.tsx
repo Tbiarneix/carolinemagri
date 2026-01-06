@@ -19,7 +19,7 @@ export default function MentionsLegalesPage() {
         <h2>Responsable de publication</h2>
         <p>
           La responsable de publication est <strong>Caroline Magri</strong>.<br />
-          E-mail : <Link href="mailto:contact@carolinemagri.fr">contact@carolinemagri.fr <ExternalLinkIcon size={16} aria-hidden="true" /></Link>
+          E-mail : <Link href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" /></Link>
         </p>
       </section>
 
@@ -42,7 +42,7 @@ export default function MentionsLegalesPage() {
         <h2>Signalement</h2>
         <p>
           Pour tout signalement de contenus ou d&apos;activités illicites, l&apos;utilisateur peut contacter l&apos;éditeur à l&apos;adresse :<br />
-          <Link href="mailto:contact@carolinemagri.fr">contact@carolinemagri.fr <ExternalLinkIcon size={16} aria-hidden="true" /></Link>
+          <Link href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" /></Link>
         </p>
       </section>
 

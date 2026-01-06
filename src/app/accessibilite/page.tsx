@@ -51,7 +51,7 @@ export default function AccessibilitePage() {
           Si vous n&apos;arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter la responsable du site pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.
         </p>
         <ul>
-          <li>E-mail : <Link href="mailto:contact@carolinemagri.fr">contact@carolinemagri.fr <ExternalLinkIcon size={16} aria-hidden="true" /></Link></li>
+          <li>E-mail : <Link href="mailto:magri.caroline@gmail.com">magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" /></Link></li>
         </ul>
       </section>
 
