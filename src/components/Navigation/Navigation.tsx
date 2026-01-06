@@ -110,7 +110,7 @@ export const Navigation = () => {
           <Link href="/sophrologie" className={pathname === '/sophrologie' ? styles.active : ''}>La Sophrologie</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/bilan" className={pathname === '/bilan' ? styles.active : ''}>Bilan psychologique</Link>
+          <Link href="/bilan-psychologique" className={pathname === '/bilan-psychologique' ? styles.active : ''}>Bilan psychologique</Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
           <Link href="/cpim" className={pathname === '/cpim' ? styles.active : ''}>CPIM</Link>

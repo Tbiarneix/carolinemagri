@@ -30,7 +30,7 @@ export const Footer = () => {
               <li><Link href="/">Accueil</Link></li>
               <li><Link href="/psychologie">La psychologie</Link></li>
               <li><Link href="/sophrologie">La sophrologie</Link></li>
-              <li><Link href="/bilan">Bilan psychologique</Link></li>
+              <li><Link href="/bilan-psychologique">Bilan psychologique</Link></li>
               <li><Link href="/cpim">CPIM</Link></li>
               <li><Link href="/honoraires-et-contact">Honoraires et contact</Link></li>
           </ul>

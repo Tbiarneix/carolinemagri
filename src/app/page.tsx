@@ -53,7 +53,7 @@ export default function Home() {
           <li className={styles.discovery__item} aria-label="Bilan Psychologique">
             <LinkCards
               theme={Theme.Light}
-              href="/bilan"
+              href="/bilan-psychologique"
               title="Bilans"
               imgSrc="/images/adultes.jpg"
               width={300}
