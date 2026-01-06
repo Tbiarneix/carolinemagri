@@ -1,0 +1,75 @@
+/* Shared CSS Module for reusable global styles */
+
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pageHero {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.pageHero h1 {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.pageHero h1::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.contentBlock {
+  background: var(--background-linear);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.contentBlock ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.contentBlock li {
+  margin-bottom: 1rem;
+}
+
+.contentBlock strong {
+  color: var(--pastel-dark);
+  display: block;
+  font-size: 1.2rem;
+}
+
+.noBullets {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 1rem 0 0;
+  }
+
+  .pageHero h1 {
+    font-size: 2rem;
+  }
+
+  .contentBlock {
+    padding: 1.5rem;
+  }
+}

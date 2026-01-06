@@ -1,10 +1,11 @@
 import { InfoCards } from '@/components/Cards/InfoCards/InfoCards';
 import styles from './page.module.css';
+import shared from "../shared.module.css";
 
 export default function PsychologyPage() {
   return (
-    <div className="page-container">
-      <section className="page-hero">
+    <div className={shared.pageContainer}>
+      <section className={shared.pageHero}>
         <h1>La Psychologie</h1>
       </section>
 
@@ -54,7 +55,7 @@ export default function PsychologyPage() {
 
       <section id="process">
         <h2>Déroulement d&apos;un suivi</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <p>
             La première séance est là pour nous permettre de prendre contact, de commencer à nous connaître. Vous me ferez part de vos demandes, vos besoins, les raisons qui vous poussent à venir voir un psychologue et vos attentes.
           </p>
@@ -79,11 +80,11 @@ export default function PsychologyPage() {
 
       <section id="differences">
         <h2>Quelles différences entre tous ces «&nbsp;psy&nbsp;»&nbsp;?</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <p>
             Psychologue, psychiatre, psychothérapeute, sophrologue... À qui s&apos;adresser ?
           </p>
-          <ul className="no-bullets">
+          <ul className={shared.noBullets}>
             <li>
               <strong>Le psychologue</strong> est diplômé d&apos;un Master de psychologie (bac+5) et à suivi un cursus universitaire théorique et pratique spécialisé. Professionnel de l&apos;écoute thérapeutique, il pratique des tests d&apos;évaluation psychologique de la personnalité et des capacités cognitives. Il travaille sur la relation d&apos;aide et le développement de la personne. Il est formé à l&apos;entretien clinique et à la pratique professionnelle lors de plusieurs stages différents (qui permettent) la mesure de la pratique relationnelle. Il s&apos;intéresse aux processus d&apos;apprentissage par l&apos;exemple, sont dans une perspective comportementale, comme de vie, sans difficulté ni familiales, etc. Le titre est reconnu et protégé par l&apos;État Français depuis 1985, tout psychologue doit être enregistré à l&apos;Agence Régionale de Santé et posséder un numéro ADELI.
             </li>

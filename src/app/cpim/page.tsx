@@ -1,7 +1,9 @@
+import shared from "../shared.module.css";
+
 export default function CpimPage() {
   return (
-    <div className="page-container">
-      <section className="page-hero">
+    <div className={shared.pageContainer}>
+      <section className={shared.pageHero}>
         <h1>CPIM</h1>
       </section>
 
@@ -17,7 +19,7 @@ export default function CpimPage() {
 
       <section id="pour-qui">
         <h2>À qui s&apos;adresse le CPIM ?</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <p>
             Le CPIM peut être bénéfique pour :
           </p>
@@ -32,7 +34,7 @@ export default function CpimPage() {
 
       <section id="deroulement">
         <h2>Déroulement d&apos;une séance</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <ul>
             <li>
               <strong>Accueil et écoute</strong> de vos besoins et de votre état du moment.

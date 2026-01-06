@@ -114,62 +114,6 @@ a:focus::after {
   width: 100%;
 }
 
-/* Styles de page globaux */
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.page-hero {
-  padding-top: 4rem;
-  text-align: center;
-}
-
-.page-hero h1 {
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.page-hero h1::after {
-  content: '';
-  position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: var(--primary);
-  border-radius: 2px;
-}
-
-.content-block {
-  background: var(--background-linear);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
-.content-block ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-.content-block li {
-  margin-bottom: 1rem;
-}
-
-.no-bullets {
-  list-style: none !important;
-  padding-left: 0 !important;
-}
-
-.content-block strong {
-  color: var(--pastel-dark);
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
 /* Styles d'accessibilité */
 .visually-hidden,
 .visually-hidden-focusable:not(:focus, :focus-within) {
@@ -219,18 +163,6 @@ a:focus::after {
   h2 {
     margin-top: 3rem;
     font-size: 1.5rem;
-  }
-
-  .page-hero {
-    padding-top: 6rem;
-}
-
-  .page-hero h1 {
-    font-size: 2rem;
-  }
-
-  .content-block {
-    padding: 1.5rem;
   }
 
   h3 {

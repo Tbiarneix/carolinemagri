@@ -1,9 +1,10 @@
 import styles from './page.module.css';
+import shared from "../shared.module.css";
 
 export default function HonorairesContactPage() {
   return (
-    <div className="page-container">
-      <section className="page-hero">
+    <div className={shared.pageContainer}>
+      <section className={shared.pageHero}>
         <h1>Honoraires et Contact</h1>
       </section>
 
@@ -33,7 +34,7 @@ export default function HonorairesContactPage() {
 
       <section id="contact">
         <h2>Contact</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <h3>Adresse du cabinet</h3>
@@ -53,7 +54,7 @@ export default function HonorairesContactPage() {
 
       <section id="rdv">
         <h2>Prendre rendez-vous</h2>
-        <div className="content-block">
+        <div className={shared.contentBlock}>
           <p>
             Vous pouvez prendre rendez-vous par téléphone ou par email. Je vous répondrai dans les plus brefs délais.
           </p>
