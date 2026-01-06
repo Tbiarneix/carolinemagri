@@ -89,7 +89,7 @@ export const Navigation = () => {
 
       <button
         ref={buttonRef}
-        className={styles.menuButton}
+        className={`${styles.menuButton} ${isOpen ? styles.menuButtonOpen : ''}`}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls="mainMenu"

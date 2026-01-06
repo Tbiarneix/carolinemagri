@@ -61,7 +61,7 @@
   height: 2px;
   background-color: var(--pastel-medium);
   position: relative;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .menuIcon::before,
@@ -71,7 +71,7 @@
   width: 24px;
   height: 2px;
   background-color: var(--pastel-medium);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 }
 
 .menuIcon::before {
@@ -80,6 +80,21 @@
 
 .menuIcon::after {
   bottom: -6px;
+}
+
+/* Burger to Cross animation */
+.menuButtonOpen .menuIcon {
+  background-color: transparent;
+}
+
+.menuButtonOpen .menuIcon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menuButtonOpen .menuIcon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
 
 .open {
