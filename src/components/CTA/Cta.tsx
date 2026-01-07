@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import styles from './Cta.module.css';
-import { CalendarPlus } from 'lucide-react';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import styles from "./Cta.module.css";
+import { CalendarPlus } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export const Cta = () => {
   const [isCompactView, setIsCompactView] = useState(false);
@@ -15,15 +15,15 @@ export const Cta = () => {
     };
 
     checkSize();
-    window.addEventListener('resize', checkSize);
-    return () => window.removeEventListener('resize', checkSize);
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
   }, []);
 
   return (
-    <Link 
-      href="https://perfactive.fr/caroline-magri/book" 
+    <Link
+      href="https://perfactive.fr/caroline-magri/book"
       className={styles.button}
-      aria-label={isCompactView ? 'Prendre rendez-vous' : undefined}
+      aria-label={isCompactView ? "Prendre rendez-vous" : undefined}
       target="_blank"
     >
       <CalendarPlus size={18} aria-hidden="true" />

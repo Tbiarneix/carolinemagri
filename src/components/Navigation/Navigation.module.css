@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 1rem 2rem;
   background-color: white;
   border-bottom: 0.4rem solid var(--pastel-extralight);
@@ -86,12 +86,15 @@
 
 .menuIcon::before,
 .menuIcon::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
   background-color: var(--pastel-medium);
-  transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease,
+    bottom 0.3s ease;
 }
 
 .menuIcon::before {
@@ -156,12 +159,12 @@
   position: absolute;
   top: 100%;
   left: 0;
-  
+
   min-width: 300px;
   margin-top: 36px;
   padding: 0.5rem 0;
   border-radius: 4px;
-  
+
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--pastel-medium);
@@ -193,11 +196,11 @@
 
 .dropdownIcon {
   display: inline-block;
-  
+
   width: 8px;
   height: 8px;
   margin: 3px 3px 3px 5px;
-  
+
   border-right: 1px solid #333;
   border-top: 1px solid #333;
   transform: rotate(135deg);
@@ -241,8 +244,7 @@
     display: flex;
 
     height: calc(100svh - 3.5rem);
-  border-bottom: 0.4rem solid var(--pastel-extralight);
-
+    border-bottom: 0.4rem solid var(--pastel-extralight);
   }
 
   .menuItems li {
@@ -258,7 +260,7 @@
   .inMenuCta {
     display: block;
   }
-  
+
   .outMenuCta {
     display: none;
   }

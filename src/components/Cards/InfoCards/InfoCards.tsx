@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import styles from './InfoCards.module.css';
-import { ReactNode } from 'react';
+import Image from "next/image";
+import styles from "./InfoCards.module.css";
+import { ReactNode } from "react";
 
 interface InfoCardsProps {
   children: ReactNode;
@@ -11,20 +11,21 @@ interface InfoCardsProps {
   height?: number;
 }
 
-export const InfoCards = ({ children, imgSrc, imgAlt, title, width = 300, height = 300 }: InfoCardsProps) => {
-    const alt = imgAlt ? imgAlt : "";
-  
-    return (
+export const InfoCards = ({
+  children,
+  imgSrc,
+  imgAlt,
+  title,
+  width = 300,
+  height = 300,
+}: InfoCardsProps) => {
+  const alt = imgAlt ? imgAlt : "";
+
+  return (
     <div className={styles.imageCard}>
       {imgSrc && (
         <div className={styles.imageWrapper}>
-          <Image
-            src={imgSrc}
-            alt={alt}
-            width={width}
-            height={height}
-            className={styles.image}
-          />
+          <Image src={imgSrc} alt={alt} width={width} height={height} className={styles.image} />
         </div>
       )}
       <h3>{title}</h3>

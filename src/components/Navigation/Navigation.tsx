@@ -23,8 +23,7 @@ export const Navigation = () => {
       const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
         'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
       );
-      const lastFocusable =
-        focusableElements?.[focusableElements.length - 1] || null;
+      const lastFocusable = focusableElements?.[focusableElements.length - 1] || null;
 
       if (!e.shiftKey && document.activeElement === lastFocusable) {
         e.preventDefault();
@@ -75,7 +74,13 @@ export const Navigation = () => {
   }, [isOpen]);
 
   return (
-    <nav className={styles.nav} role="navigation" aria-label="Menu principal" id="main-navigation" tabIndex={-1}>
+    <nav
+      className={styles.nav}
+      role="navigation"
+      aria-label="Menu principal"
+      id="main-navigation"
+      tabIndex={-1}
+    >
       <div className={styles.logo}>
         <Link onClick={() => setIsOpen(false)} href="/" aria-label="Aller à la page d'accueil">
           <Image
@@ -89,7 +94,7 @@ export const Navigation = () => {
 
       <button
         ref={buttonRef}
-        className={`${styles.menuButton} ${isOpen ? styles.menuButtonOpen : ''}`}
+        className={`${styles.menuButton} ${isOpen ? styles.menuButtonOpen : ""}`}
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls="mainMenu"
@@ -104,19 +109,33 @@ export const Navigation = () => {
         className={`${styles.menuItems} ${isOpen ? styles.open : ""}`}
       >
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/psychologie" className={pathname === '/psychologie' ? styles.active : ''}>La Psychologie</Link>
+          <Link href="/psychologie" className={pathname === "/psychologie" ? styles.active : ""}>
+            La Psychologie
+          </Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/sophrologie" className={pathname === '/sophrologie' ? styles.active : ''}>La Sophrologie</Link>
+          <Link href="/sophrologie" className={pathname === "/sophrologie" ? styles.active : ""}>
+            La Sophrologie
+          </Link>
         </li>
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/bilan-psychologique" className={`${styles.wrapText} ${pathname === '/bilan-psychologique' ? styles.active : ''}`}>Bilan psychologique</Link>
+          <Link
+            href="/bilan-psychologique"
+            className={`${styles.wrapText} ${pathname === "/bilan-psychologique" ? styles.active : ""}`}
+          >
+            Bilan psychologique
+          </Link>
         </li>
         {/* <li onClick={() => setIsOpen(false)}>
           <Link href="/cpim" className={pathname === '/cpim' ? styles.active : ''}>CPIM</Link>
         </li> */}
         <li onClick={() => setIsOpen(false)}>
-          <Link href="/honoraires-et-contact" className={`${styles.wrapText} ${pathname === '/honoraires-et-contact' ? styles.active : ''}`}>Honoraires et contact</Link>
+          <Link
+            href="/honoraires-et-contact"
+            className={`${styles.wrapText} ${pathname === "/honoraires-et-contact" ? styles.active : ""}`}
+          >
+            Honoraires et contact
+          </Link>
         </li>
         <li className={styles.inMenuCta}>
           <Cta />

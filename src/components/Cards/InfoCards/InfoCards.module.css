@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   padding: 2rem;
   border-radius: 16px;
-  
+
   color: #fff;
   background: var(--pastel-dark);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .imageCard h3 {

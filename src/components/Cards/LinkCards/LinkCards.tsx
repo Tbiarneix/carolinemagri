@@ -13,13 +13,13 @@ interface LinkCardsProps {
 }
 
 export enum Theme {
-  Dark = 'dark',
-  Light = 'light'
+  Dark = "dark",
+  Light = "light",
 }
 
-export const LinkCards = ({theme, href, title, imgSrc, width, height, alt}: LinkCardsProps) => {
+export const LinkCards = ({ theme, href, title, imgSrc, width, height, alt }: LinkCardsProps) => {
   return (
-    <Link href={href} className={styles.linkCard + ' ' + styles[theme]}>
+    <Link href={href} className={styles.linkCard + " " + styles[theme]}>
       <h3>{title}</h3>
       <div className={styles.imageContainer}>
         <Image

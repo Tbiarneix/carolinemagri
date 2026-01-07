@@ -10,19 +10,20 @@ export default function CpimPage() {
       <section id="definition">
         <h2>Qu&apos;est-ce que le CPIM ?</h2>
         <p>
-          Le CPIM (Cycle Psychologique d&apos;Intégration par le Mouvement) est une approche thérapeutique innovante qui combine les processus psychologiques avec le mouvement corporel.
+          Le CPIM (Cycle Psychologique d&apos;Intégration par le Mouvement) est une approche
+          thérapeutique innovante qui combine les processus psychologiques avec le mouvement
+          corporel.
         </p>
         <p>
-          Cette méthode permet de travailler sur les blocages émotionnels et les traumatismes en intégrant le corps dans le processus thérapeutique.
+          Cette méthode permet de travailler sur les blocages émotionnels et les traumatismes en
+          intégrant le corps dans le processus thérapeutique.
         </p>
       </section>
 
       <section id="pour-qui">
         <h2>À qui s&apos;adresse le CPIM ?</h2>
         <div className={shared.contentBlock}>
-          <p>
-            Le CPIM peut être bénéfique pour :
-          </p>
+          <p>Le CPIM peut être bénéfique pour :</p>
           <ul>
             <li>Les personnes ayant vécu des événements traumatiques</li>
             <li>Ceux qui souhaitent travailler sur leurs émotions de manière corporelle</li>

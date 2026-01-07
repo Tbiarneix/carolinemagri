@@ -12,11 +12,22 @@ export const metadata: Metadata = {
   },
   description:
     "Cabinet de psychologie et sophrologie à Pinsaguel (31120). Accompagnement pour enfants, adolescents, adultes et familles. Bilan psychologique WISC-V.",
-  keywords: ["psychologue", "sophrologue", "Pinsaguel", "Toulouse", "bilan psychologique", "WISC-V", "sophrologie", "thérapie", "31120"],
+  keywords: [
+    "psychologue",
+    "sophrologue",
+    "Pinsaguel",
+    "Toulouse",
+    "bilan psychologique",
+    "WISC-V",
+    "sophrologie",
+    "thérapie",
+    "31120",
+  ],
   authors: [{ name: "Caroline Magri" }],
   openGraph: {
     title: "Caroline Magri - Psychologue et Sophrologue",
-    description: "Cabinet de psychologie et sophrologie à Pinsaguel. Accompagnement pour enfants, adolescents, adultes et familles.",
+    description:
+      "Cabinet de psychologie et sophrologie à Pinsaguel. Accompagnement pour enfants, adolescents, adultes et familles.",
     url: "https://carolinemagri.fr",
     siteName: "Caroline Magri - Psychologue",
     locale: "fr_FR",
@@ -29,11 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://carolinemagri.fr"),
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <body className={AtkinsonHyperlegible.className}>
@@ -41,7 +48,9 @@ export default function RootLayout({
           <SkipLink />
           <Navigation />
         </header>
-        <main id="main-content" tabIndex={-1}>{children}</main>
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -155,7 +155,7 @@
   .prev_button {
     left: 1rem;
   }
-  
+
   .next_button {
     right: 1rem;
   }
@@ -209,7 +209,7 @@
 
   .testimonials__container::before,
   .testimonials__container::after {
-    content: '';
+    content: "";
     flex: 0 0 calc((100% - 60%) / 2);
   }
 
