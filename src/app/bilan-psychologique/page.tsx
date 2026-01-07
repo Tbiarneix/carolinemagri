@@ -27,7 +27,7 @@ export default function BilanPsychologiquePage() {
         <p>Toutes les questions seront abordées à ce moment.</p>
         <div className={shared.center}>
           <Image
-            src="/images/Famille.jpg"
+            src="/images/Famille.webp"
             alt=""
             width={400}
             height={300}

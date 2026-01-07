@@ -16,7 +16,7 @@ export default function Home() {
                 <span className={styles.hero__subtitle}>Psychologue et Sophrologue</span>
               </h1>
               <Image
-                src="/images/Psychologie.jpg"
+                src="/images/Psychologie.webp"
                 alt=""
                 width={300}
                 height={225}
@@ -50,7 +50,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/psychologie"
               title="La Psychologie"
-              imgSrc="/images/Psychologue-et-enfant-1.jpg"
+              imgSrc="/images/Psychologue-et-enfant-1.webp"
               width={300}
               height={250}
               alt=""
@@ -61,7 +61,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/sophrologie"
               title="La Sophrologie"
-              imgSrc="/images/Zenitude.jpg"
+              imgSrc="/images/Zenitude.webp"
               width={300}
               height={250}
               alt=""
@@ -72,7 +72,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/bilan-psychologique"
               title="Bilans"
-              imgSrc="/images/Famille.jpg"
+              imgSrc="/images/Famille.webp"
               width={300}
               height={250}
               alt=""
@@ -83,7 +83,7 @@ export default function Home() {
               theme={Theme.Light}
               href="/honoraires-et-contact"
               title="Contact"
-              imgSrc="/images/Solidaire.jpg"
+              imgSrc="/images/Solidaire.webp"
               width={300}
               height={250}
               alt=""

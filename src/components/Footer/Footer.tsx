@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer role="contentinfo" className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.leftSection}>
-          <Image src="/images/logo-full-blanc.png" alt="" width={250} height={165} />
+          <Image src="/images/logo-full-blanc.webp" alt="" width={250} height={165} />
           <p className={styles.tagline}>
             Caroline Magri
             <br />

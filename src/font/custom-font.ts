@@ -23,4 +23,5 @@ export const AtkinsonHyperlegible = localFont({
       style: "italic",
     },
   ],
+  display: "swap",
 });

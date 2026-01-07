@@ -84,7 +84,7 @@ export const Navigation = () => {
       <div className={styles.logo}>
         <Link onClick={() => setIsOpen(false)} href="/" aria-label="Aller à la page d'accueil">
           <Image
-            src="/images/logo-text-bicolor.png"
+            src="/images/logo-text-bicolor.webp"
             alt="Logo de Caroline Magri"
             width={isMobile ? 80 : 136}
             height={isMobile ? 30 : 50}

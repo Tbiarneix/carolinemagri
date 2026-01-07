@@ -44,7 +44,7 @@ export default function SophrologiePage() {
         </p>
         <div className={shared.center}>
           <Image
-            src="/images/Zenitude.jpg"
+            src="/images/Zenitude.webp"
             alt=""
             width={400}
             height={300}
