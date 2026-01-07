@@ -68,6 +68,24 @@ export const Testimonials = () => {
       aria-roledescription="Carrousel d'avis clients"
     >
       <h2 id="testimonials-title">Avis des patients</h2>
+      <div className={styles.testimonials__navigation}>
+        <button
+          onClick={() => handleManualScroll("left")}
+          className={`${styles.nav_button} ${styles.prev_button}`}
+          disabled={!canScrollLeft}
+          aria-label="Voir les avis précédents"
+        >
+          <ChevronLeft aria-hidden="true" />
+        </button>
+        <button
+          onClick={() => handleManualScroll("right")}
+          className={`${styles.nav_button} ${styles.next_button}`}
+          disabled={!canScrollRight}
+          aria-label="Voir les avis suivants"
+        >
+          <ChevronRight aria-hidden="true" />
+        </button>
+      </div>
       <ul
         ref={containerRef}
         className={styles.testimonials__container}
@@ -87,24 +105,6 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-      <div className={styles.testimonials__navigation}>
-        <button
-          onClick={() => handleManualScroll("left")}
-          className={`${styles.nav_button} ${styles.prev_button}`}
-          disabled={!canScrollLeft}
-          aria-label="Voir les avis précédents"
-        >
-          <ChevronLeft aria-hidden="true" />
-        </button>
-        <button
-          onClick={() => handleManualScroll("right")}
-          className={`${styles.nav_button} ${styles.next_button}`}
-          disabled={!canScrollRight}
-          aria-label="Voir les avis suivants"
-        >
-          <ChevronRight aria-hidden="true" />
-        </button>
-      </div>
       <footer className={styles.testimonials__footer}>
         <div className={styles.average_rating}>
           <span>Note moyenne :</span>
