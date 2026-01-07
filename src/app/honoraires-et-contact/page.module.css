@@ -59,14 +59,56 @@
   border-radius: 12px;
   overflow: hidden;
   min-height: 300px;
+  position: relative;
+}
 
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 12px;
-    min-height: 300px;
-  }
+.mapLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.mapLink:hover {
+  transform: scale(1.02);
+}
+
+.mapLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.mapLink:hover::after {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mapOverlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pastel-dark);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+.mapLink:hover .mapOverlay {
+  background: var(--pastel-medium);
 }
 
 .contactItem p {

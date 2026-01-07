@@ -3,6 +3,7 @@ import shared from "../shared.module.css";
 import { InfoCards } from "@/components/Cards/InfoCards/InfoCards";
 import { ExternalLink } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Honoraires et Contact",
@@ -123,13 +124,24 @@ export default function HonorairesContactPage() {
             </div>
           </div>
           <div className={styles.contactMap}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.8!2d1.3869!3d43.5089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1+Rue+Th%C3%A9odore+Monod%2C+31120+Pinsaguel!5e0!3m2!1sfr!2sfr!4v1234567890"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localisation du cabinet"
-            />
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=1+Rue+Th%C3%A9odore+Monod%2C+31120+Pinsaguel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.mapLink}
+              aria-label="Ouvrir l'adresse du cabinet dans Google Maps"
+            >
+              <Image
+                src="/images/map-custom.webp"
+                alt="Localisation du cabinet - 1 Rue Théodore Monod, 31120 Pinsaguel"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+              <span className={styles.mapOverlay}>
+                <ExternalLink size={18} aria-hidden="true" />
+                Ouvrir dans Google Maps
+              </span>
+            </a>
           </div>
         </div>
       </section>
