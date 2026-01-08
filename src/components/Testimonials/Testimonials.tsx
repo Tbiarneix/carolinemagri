@@ -22,14 +22,24 @@ export const Testimonials = () => {
   const containerRef = useRef<HTMLUListElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
+  const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
+
+  const totalSlides = testimonialData.testimonials.length;
 
   const checkScrollButtons = useCallback(() => {
     if (containerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
+
+      // Calculer l'index du slide actif basé sur la position de scroll
+      const testimonialWidth = containerRef.current.firstElementChild?.clientWidth || 0;
+      if (testimonialWidth > 0) {
+        const newIndex = Math.round(scrollLeft / testimonialWidth);
+        setActiveSlideIndex(Math.min(newIndex, totalSlides - 1));
+      }
     }
-  }, []);
+  }, [totalSlides]);
 
   const handleManualScroll = useCallback(
     (direction: "left" | "right") => {
@@ -41,7 +51,8 @@ export const Testimonials = () => {
             container.scrollLeft + (direction === "left" ? -testimonialWidth : testimonialWidth),
           behavior: "smooth",
         });
-        checkScrollButtons();
+        // Mettre à jour après un délai pour laisser le scroll se terminer
+        setTimeout(checkScrollButtons, 350);
       }
     },
     [checkScrollButtons]
@@ -58,6 +69,11 @@ export const Testimonials = () => {
     },
     [handleManualScroll]
   );
+
+  // Écouter le scroll pour mettre à jour l'état
+  const handleScroll = useCallback(() => {
+    checkScrollButtons();
+  }, [checkScrollButtons]);
 
   return (
     <section
@@ -91,9 +107,18 @@ export const Testimonials = () => {
         className={styles.testimonials__container}
         role="list"
         aria-live="polite"
+        onScroll={handleScroll}
       >
-        {testimonialData.testimonials.map((testimonial) => (
-          <li key={testimonial.id} className={styles.testimonial} tabIndex={0}>
+        {testimonialData.testimonials.map((testimonial, index) => (
+          <li
+            key={testimonial.id}
+            className={styles.testimonial}
+            tabIndex={0}
+            role="group"
+            aria-roledescription="diapositive"
+            aria-label={`${index + 1} sur ${totalSlides}`}
+            aria-current={index === activeSlideIndex ? "true" : undefined}
+          >
             <div>
               <div className={styles.testimonial__header}>
                 <h3 className={styles.testimonial__name}>{testimonial.name}</h3>
