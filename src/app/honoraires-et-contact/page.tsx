@@ -64,8 +64,8 @@ export default function HonorairesContactPage() {
           à vous munir d&apos;un moyen de paiement.
         </p>
         <p>
-          Je ne suis <b>pas conventionnée Mon Parcours Psy</b> (parcours gouvernemental). Pour en
-          comprendre les raisons (si vous le souhaitez), je vous invite à lire{" "}
+          Je ne suis <strong>pas conventionnée Mon Parcours Psy</strong> (parcours gouvernemental).
+          Pour en comprendre les raisons (si vous le souhaitez), je vous invite à lire{" "}
           <a href="https://associationm3p-psychologues.fr/une-escroquerie-nommee-monpsy-article-du-co-dirigeant-de-lassociation-m3p-lionel-camalet/">
             cet article <Icon name="external-link" size={16} aria-hidden="true" />
           </a>
@@ -78,12 +78,12 @@ export default function HonorairesContactPage() {
         </p>
         <p>
           En cas d&apos;impossibilité, je vous demande un <b>appel</b> ou un <b>mail</b>,{" "}
-          <b>48h à l&apos;avance</b>, ce qui peut permettre à d&apos;autres patients de bénéficier
-          du créneau.
+          <strong>48h à l&apos;avance</strong>, ce qui peut permettre à d&apos;autres patients de
+          bénéficier du créneau.
         </p>
         <p>
-          Donc pour les <b>RENDEZ-VOUS NON HONORES</b> : le tarif de la séance <b>sera facturé</b>{" "}
-          lors de la séance suivante.
+          Donc pour les <strong>RENDEZ-VOUS NON HONORÉS</strong> : le tarif de la séance{" "}
+          <strong>sera facturé</strong> lors de la séance suivante.
         </p>
         <p>
           Les séances de psychologie et de sophrologie ne sont pas prises en charge par la Sécurité
