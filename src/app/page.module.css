@@ -94,6 +94,22 @@
   margin: 0 auto 3rem;
 }
 
+.practice {
+  max-width: 1200px;
+  margin: 6rem auto;
+}
+
+.practice__content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+  border: 1px solid #777777;
+  border-radius: 12px;
+
+  background: var(--background-linear);
+}
+
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -124,6 +140,14 @@
   }
 
   .professional__column {
+    padding: 1rem 0.8rem;
+  }
+
+  .practice {
+    margin: 3rem auto;
+  }
+
+  .practice__content {
     padding: 1rem 0.8rem;
   }
 

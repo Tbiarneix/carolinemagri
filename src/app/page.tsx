@@ -100,17 +100,33 @@ export default function Home() {
             <p>
               Spécialisée dans le développement, je suis diplômée d&apos;un Master professionnel de
               Psychologie du développement de l&apos;enfant et de l&apos;adolescent obtenu à
-              l&apos;Université de Basse Normandie à Caen. Je suis également diplômée en Sophrologie
-              et inscrit au Répertoire National des Certifications professionnelles.
-              <br />
+              l&apos;Université de Basse Normandie à Caen.
+            </p>
+            <p>
+              Je suis également diplômée en Sophrologie à l'ISSO,{" "}
               <a
-                href="http://www.cncp.gouv.fr/"
+                href="https://www.feps-sophrologie.fr/isso-institut-de-sophrologie-du-sud-ouest/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="CNCP, site officiel - Nouvel onglet"
               >
-                cncp.gouv.fr <Icon name="external-link" size={16} aria-hidden="true" />
+                Institut de Sophrologie du Sud-Ouest
+                <Icon name="external-link" size={16} aria-hidden="true" />,{" "}
               </a>
+              école membre de la{" "}
+              <a
+                href="https://www.feps-sophrologie.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CNCP, site officiel - Nouvel onglet"
+              >
+                Fédération des Écoles Professionnelles en Sophrologie
+                <Icon name="external-link" size={16} aria-hidden="true" />.
+              </a>
+              <br />
+              Bien que reconnu au Répertoire National des Certifications Professionnels (RNCP) lors
+              du passage de ma certification, cette reconnaissance a été retirée par l'État français
+              le 26 janvier 2025.
             </p>
             <p>
               De part ma formation et ma pratique, je considère la personne dans sa globalité et
@@ -119,22 +135,6 @@ export default function Home() {
               L&apos;intégration de la sphère familiale, sociale et scolaire/professionnelle de la
               personne, constitue à mon sens un point central de la prise en charge psychologique.
             </p>
-            <p>
-              La psychologie du développement s&apos;intéresse au développement de l&apos;individu
-              de la naissance à l&apos;adolescence. L&apos;objet de la psychologie du développement
-              concerne l&apos;analyse des changements développementaux et l&apos;étude de multiples
-              facteurs et de leur interaction intervenant sur l&apos;évolution. Elle ne se restreint
-              pas aux changements qui se produisent pendant l&apos;enfance mais s&apos;intéresse à
-              l&apos;ensemble des changements qui se produisent dès la conception jusqu&apos;à la
-              fin de la vie.
-            </p>
-            <p>
-              Elle cherche donc à comprendre l&apos;organisation psychique d&apos;un individu, et
-              son évolution dans le temps. Le psychologue du développement s&apos;intéresse à la
-              manière dont un individu s&apos;est construit sur les plans affectif, social et
-              cognitif, et aux outils dont il dispose pour évoluer dans son environnement.
-            </p>
-            <p></p>
           </div>
           <div className={styles.professional__column}>
             <h3>Le cabinet</h3>
@@ -179,6 +179,26 @@ export default function Home() {
               les écoles, les médecins traitants, les orthophonistes, les psychomotriciens...
             </p>
           </div>
+        </div>
+      </section>
+      <section className={styles.practice}>
+        <h2>Ma pratique : La Psychologie du Développement</h2>
+        <div className={styles.practice__content}>
+          <p>
+            La psychologie du développement s&apos;intéresse au développement de l&apos;individu de
+            la naissance à l&apos;adolescence. L&apos;objet de la psychologie du développement
+            concerne l&apos;analyse des changements développementaux et l&apos;étude de multiples
+            facteurs et de leur interaction intervenant sur l&apos;évolution. Elle ne se restreint
+            pas aux changements qui se produisent pendant l&apos;enfance mais s&apos;intéresse à
+            l&apos;ensemble des changements qui se produisent dès la conception jusqu&apos;à la fin
+            de la vie.
+          </p>
+          <p>
+            Elle cherche donc à comprendre l&apos;organisation psychique d&apos;un individu, et son
+            évolution dans le temps. Le psychologue du développement s&apos;intéresse à la manière
+            dont un individu s&apos;est construit sur les plans affectif, social et cognitif, et aux
+            outils dont il dispose pour évoluer dans son environnement.
+          </p>
         </div>
       </section>
       <Testimonials />
