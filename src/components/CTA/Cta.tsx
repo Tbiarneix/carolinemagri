@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Cta.module.css";
-import { CalendarPlus } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -26,7 +26,7 @@ export const Cta = () => {
       aria-label={isCompactView ? "Prendre rendez-vous" : undefined}
       target="_blank"
     >
-      <CalendarPlus size={18} aria-hidden="true" />
+      <Icon name="calendar-plus" size={18} aria-hidden="true" />
       <span className={styles.buttonText}>Prendre rendez-vous</span>
     </Link>
   );

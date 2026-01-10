@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer role="contentinfo" className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.leftSection}>
-          <Image src="/images/logo-full-blanc.webp" alt="" width={250} height={165} />
+          <Image src="/images/logo-full-blanc.webp" alt="" width={250} height={165} sizes="250px" />
           <p className={styles.tagline}>
             Caroline Magri
             <br />
@@ -58,6 +58,18 @@ export const Footer = () => {
               <li>
                 <Link href="/accessibilite">Accessibilité: Non conforme</Link>
               </li>
+              <li>
+                <a
+                  href="https://bff.ecoindex.fr/redirect/?url=https://carolinemagri.fr"
+                  target="_blank"
+                  className={styles.noUnderline}
+                >
+                  <img
+                    src="https://bff.ecoindex.fr/badge/?theme=light&url=https://carolinemagri.fr"
+                    alt="Ecoindex Badge"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -66,7 +78,7 @@ export const Footer = () => {
       <div className={styles.copyright}>
         © {currentYear} Caroline Magri - Tous droits réservés - Réalisation{" "}
         <Link href="https://www.thomasbiarneix.com/" target="_blank" rel="noopener noreferrer">
-          Thomas Biarneix <ExternalLink size={16} aria-hidden="true" />
+          Thomas Biarneix <Icon name="external-link" size={16} aria-hidden="true" />
         </Link>{" "}
         -{" "}
         <Link
@@ -74,7 +86,7 @@ export const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Numéro RPPS 10009652727 <ExternalLink size={16} aria-hidden="true" />
+          Numéro RPPS 10009652727 <Icon name="external-link" size={16} aria-hidden="true" />
         </Link>
       </div>
     </footer>

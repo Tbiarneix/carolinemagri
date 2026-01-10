@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import shared from "../shared.module.css";
 import Link from "next/link";
 
@@ -57,7 +57,7 @@ export default function AccessibilitePage() {
           <li>
             E-mail :{" "}
             <Link href="mailto:magri.caroline@gmail.com">
-              magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" />
+              magri.caroline@gmail.com <Icon name="external-link" size={16} aria-hidden="true" />
             </Link>
           </li>
         </ul>
@@ -79,7 +79,7 @@ export default function AccessibilitePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Défenseur des droits <ExternalLinkIcon size={16} aria-hidden="true" />
+              Défenseur des droits <Icon name="external-link" size={16} aria-hidden="true" />
             </Link>
           </li>
           <li>
@@ -90,7 +90,7 @@ export default function AccessibilitePage() {
               rel="noopener noreferrer"
             >
               Défenseur des droits dans votre région{" "}
-              <ExternalLinkIcon size={16} aria-hidden="true" />
+              <Icon name="external-link" size={16} aria-hidden="true" />
             </Link>
           </li>
           <li>

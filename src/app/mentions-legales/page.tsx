@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import shared from "../shared.module.css";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ export default function MentionsLegalesPage() {
           La responsable de publication est <strong>Caroline Magri</strong>.<br />
           E-mail :{" "}
           <Link href="mailto:magri.caroline@gmail.com">
-            magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" />
+            magri.caroline@gmail.com <Icon name="external-link" size={16} aria-hidden="true" />
           </Link>
         </p>
       </section>
@@ -51,7 +51,7 @@ export default function MentionsLegalesPage() {
           Pour tout signalement de contenus ou d&apos;activités illicites, l&apos;utilisateur peut
           contacter l&apos;éditeur à l&apos;adresse :<br />
           <Link href="mailto:magri.caroline@gmail.com">
-            magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" />
+            magri.caroline@gmail.com <Icon name="external-link" size={16} aria-hidden="true" />
           </Link>
         </p>
       </section>
@@ -69,7 +69,7 @@ export default function MentionsLegalesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Thomas Biarneix <ExternalLinkIcon size={16} aria-hidden="true" />
+                Thomas Biarneix <Icon name="external-link" size={16} aria-hidden="true" />
               </Link>
             </strong>
           </li>

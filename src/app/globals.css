@@ -186,3 +186,59 @@ button:focus {
     margin: 1rem auto;
   }
 }
+
+/* ==========================================
+   Print Styles
+   ========================================== */
+@media print {
+  /* Masquer les éléments non imprimables */
+  #main-header,
+  footer[role="contentinfo"],
+  .skip-link,
+  nav[role="navigation"] {
+    display: none !important;
+  }
+
+  /* Optimiser le contenu pour l'impression */
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Afficher les URLs des liens */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Supprimer les effets de liens en impression */
+  a::after {
+    transform: none !important;
+  }
+
+  /* Éviter les coupures de page au milieu des éléments */
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Masquer les images décoratives */
+  img[alt=""] {
+    display: none;
+  }
+}

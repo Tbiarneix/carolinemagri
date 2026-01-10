@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import shared from "../shared.module.css";
 import Link from "next/link";
 
@@ -64,7 +64,7 @@ export default function PolitiqueDeConfidentialitePage() {
           La responsable des données à caractère personnel est Caroline Magri. Vous pouvez la
           contacter par mail{" "}
           <Link href="mailto:magri.caroline@gmail.com">
-            magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" />
+            magri.caroline@gmail.com <Icon name="external-link" size={16} aria-hidden="true" />
           </Link>
           .
         </p>
@@ -101,7 +101,7 @@ export default function PolitiqueDeConfidentialitePage() {
         <p>
           Pour faire valoir vos droits, vous pouvez le faire à l&apos;adresse{" "}
           <Link href="mailto:magri.caroline@gmail.com">
-            magri.caroline@gmail.com <ExternalLinkIcon size={16} aria-hidden="true" />
+            magri.caroline@gmail.com <Icon name="external-link" size={16} aria-hidden="true" />
           </Link>{" "}
           en précisant vos coordonnées (Prénom, Nom, e-mail) et l&apos;objet de votre demande.
         </p>

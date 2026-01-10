@@ -4,7 +4,7 @@ import { useRef, useState, useCallback } from "react";
 import styles from "./Testimonials.module.css";
 import testimonialData from "@/data/testimonials.json";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 
 const StarRating = ({ rating }: { rating: number }) => {
   return (
@@ -22,14 +22,24 @@ export const Testimonials = () => {
   const containerRef = useRef<HTMLUListElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
+  const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
+
+  const totalSlides = testimonialData.testimonials.length;
 
   const checkScrollButtons = useCallback(() => {
     if (containerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
+
+      // Calculer l'index du slide actif basé sur la position de scroll
+      const testimonialWidth = containerRef.current.firstElementChild?.clientWidth || 0;
+      if (testimonialWidth > 0) {
+        const newIndex = Math.round(scrollLeft / testimonialWidth);
+        setActiveSlideIndex(Math.min(newIndex, totalSlides - 1));
+      }
     }
-  }, []);
+  }, [totalSlides]);
 
   const handleManualScroll = useCallback(
     (direction: "left" | "right") => {
@@ -41,7 +51,8 @@ export const Testimonials = () => {
             container.scrollLeft + (direction === "left" ? -testimonialWidth : testimonialWidth),
           behavior: "smooth",
         });
-        checkScrollButtons();
+        // Mettre à jour après un délai pour laisser le scroll se terminer
+        setTimeout(checkScrollButtons, 350);
       }
     },
     [checkScrollButtons]
@@ -59,6 +70,11 @@ export const Testimonials = () => {
     [handleManualScroll]
   );
 
+  // Écouter le scroll pour mettre à jour l'état
+  const handleScroll = useCallback(() => {
+    checkScrollButtons();
+  }, [checkScrollButtons]);
+
   return (
     <section
       className={styles.testimonials}
@@ -68,14 +84,41 @@ export const Testimonials = () => {
       aria-roledescription="Carrousel d'avis clients"
     >
       <h2 id="testimonials-title">Avis des patients</h2>
+      <div className={styles.testimonials__navigation}>
+        <button
+          onClick={() => handleManualScroll("left")}
+          className={`${styles.nav_button} ${styles.prev_button}`}
+          disabled={!canScrollLeft}
+          aria-label="Voir les avis précédents"
+        >
+          <Icon name="chevron-left" aria-hidden="true" />
+        </button>
+        <button
+          onClick={() => handleManualScroll("right")}
+          className={`${styles.nav_button} ${styles.next_button}`}
+          disabled={!canScrollRight}
+          aria-label="Voir les avis suivants"
+        >
+          <Icon name="chevron-right" aria-hidden="true" />
+        </button>
+      </div>
       <ul
         ref={containerRef}
         className={styles.testimonials__container}
         role="list"
         aria-live="polite"
+        onScroll={handleScroll}
       >
-        {testimonialData.testimonials.map((testimonial) => (
-          <li key={testimonial.id} className={styles.testimonial} tabIndex={0}>
+        {testimonialData.testimonials.map((testimonial, index) => (
+          <li
+            key={testimonial.id}
+            className={styles.testimonial}
+            tabIndex={0}
+            role="group"
+            aria-roledescription="diapositive"
+            aria-label={`${index + 1} sur ${totalSlides}`}
+            aria-current={index === activeSlideIndex ? "true" : undefined}
+          >
             <div>
               <div className={styles.testimonial__header}>
                 <h3 className={styles.testimonial__name}>{testimonial.name}</h3>
@@ -87,24 +130,6 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-      <div className={styles.testimonials__navigation}>
-        <button
-          onClick={() => handleManualScroll("left")}
-          className={`${styles.nav_button} ${styles.prev_button}`}
-          disabled={!canScrollLeft}
-          aria-label="Voir les avis précédents"
-        >
-          <ChevronLeft aria-hidden="true" />
-        </button>
-        <button
-          onClick={() => handleManualScroll("right")}
-          className={`${styles.nav_button} ${styles.next_button}`}
-          disabled={!canScrollRight}
-          aria-label="Voir les avis suivants"
-        >
-          <ChevronRight aria-hidden="true" />
-        </button>
-      </div>
       <footer className={styles.testimonials__footer}>
         <div className={styles.average_rating}>
           <span>Note moyenne :</span>
@@ -119,7 +144,7 @@ export const Testimonials = () => {
           aria-label="Voir tous les avis sur Google"
         >
           Voir tous les avis sur Google
-          <ExternalLink />
+          <Icon name="external-link" />
         </Link>
       </footer>
     </section>

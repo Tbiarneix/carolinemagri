@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import { LinkCards, Theme } from "@/components/Cards/LinkCards/LinkCards";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
-import { ExternalLink } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import Image from "next/image";
 
 export default function Home() {
@@ -104,7 +104,7 @@ export default function Home() {
               et inscrit au Répertoire National des Certifications professionnelles.
               <br />
               <a href="http://www.cncp.gouv.fr/" target="_blank" rel="noopener noreferrer">
-                http://www.cncp.gouv.fr/ <ExternalLink size={16} aria-hidden="true" />
+                http://www.cncp.gouv.fr/ <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
             </p>
             <p>
@@ -151,7 +151,8 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.occitanie.ars.sante.fr/ <ExternalLink size={16} aria-hidden="true" />
+                https://www.occitanie.ars.sante.fr/{" "}
+                <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
             </p>
             <p>
@@ -163,7 +164,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 http://www.codededeontologiedespsychologues.fr/{" "}
-                <ExternalLink size={16} aria-hidden="true" />
+                <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
             </p>
             <p>

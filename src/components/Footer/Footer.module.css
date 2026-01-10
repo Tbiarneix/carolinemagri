@@ -83,6 +83,10 @@
   transform: scaleX(1);
 }
 
+.noUnderline::after {
+  display: none !important;
+}
+
 .copyright {
   text-align: center;
   padding: 1.5rem;
