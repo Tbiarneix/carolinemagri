@@ -111,8 +111,8 @@ export default function PsychologyPage() {
           <p>Psychologue, psychiatre, psychothérapeute, sophrologue... À qui s&apos;adresser ?</p>
           <ul className={shared.noBullets}>
             <li>
-              <strong>Le psychologue</strong> est diplômé d&apos;un Master de psychologie (bac+5) et
-              à suivi un cursus universitaire théorique et pratique spécialisé. Professionnel de
+              <strong>Le psychologue</strong> Diplômé d&apos;un Master de psychologie (bac+5), il à
+              suivi un cursus universitaire théorique et pratique spécialisé. Professionnel de
               l&apos;écoute thérapeutique, il pratique des tests d&apos;évaluation psychologique de
               la personnalité et des capacités cognitives. Il travaille sur la relation d&apos;aide
               et le développement de la personne. Il est formé à l&apos;entretien clinique et à la
@@ -124,36 +124,38 @@ export default function PsychologyPage() {
               l&apos;Agence Régionale de Santé et posséder un numéro ADELI.
             </li>
             <li>
-              <strong>Le psychiatre</strong> est avant tout un médecin, il est le seul à pouvoir
+              <strong>Le psychiatre</strong> Il est avant tout un médecin et est le seul à pouvoir
               prescrire des médicaments. Le psychiatre s&apos;est spécialisé dans les troubles
               mentaux après plusieurs années d&apos;études de médecine. À l&apos;hôpital auprès de
               personnes présentant des troubles psychiques graves, mais peut aussi recevoir des
-              personnes souffrant de dépression légère exclusivement besoin d&apos;un soutien
-              médicamenteux. Le titre est protégé par l&apos;État Français, tout psychiatre est
-              membre de l&apos;Ordre des médecins.
+              personnes souffrant de dépression légère ayant besoin d&apos;un soutien médicamenteux.
+              Le titre est protégé par l&apos;État Français, tout psychiatre est membre de
+              l&apos;Ordre des médecins.
             </li>
             <li>
-              <strong>Le psychothérapeute</strong> s&apos;est formé au titre d&apos;études et de
-              société. Titre reconnu seulement depuis 2010, le psychothérapeute a suivi une
-              formation théorique et pratique en plus. Cependant, ce titre peut être conservé par
-              dérogation à la psychothérapie principalement le décret, et ce sans formation
-              universitaire. Le titre est donc encore peu encadré. À l&apos;inverse de la remarque
-              au possible sur la formation du praticien.
+              <strong>Le psychothérapeute</strong> Reconnu officiellement depuis 2010, le titre de
+              psychothérapeute garantit en principe une formation théorique et pratique rigoureuse
+              en psychopathologie. Toutefois, la vigilance reste de mise : une dérogation légale a
+              permis à des praticiens exerçant avant cette date de conserver leur titre, sans
+              nécessairement posséder le cursus universitaire désormais exigé. Face à cette
+              disparité de profils, il est vivement recommandé de se renseigner sur la formation
+              initiale et le parcours spécifique du professionnel que vous consultez.
             </li>
             <li>
-              <strong>Le psychanalyste</strong> (généralement psychologue ou psychiatre) peut être
-              issu de n&apos;importe quelle formation en psychologie, s&apos;utilise la théorie
-              psychanalytique freudienne notamment. Il est important de vérifier que le
-              psychanalyste soit diplômé en psychologie ou en psychiatrie, ce bien qu&apos;il soit
+              <strong>Le psychanalyste</strong> Généralement psychologue ou psychiatre, il peut être
+              issu de n&apos;importe quelle formation en psychologie. Il utilise la théorie
+              psychanalytique freudienne ou lacanienne par exemple. Il est important de vérifier que
+              le psychanalyste est diplômé en psychologie ou en psychiatrie même s&apos;il est
               membre d&apos;une société psychanalytique reconnue. Le titre de psychanalyste
               n&apos;est ni encadré, ni reconnu par l&apos;État français.
             </li>
             <li>
-              <strong>Le psychopraticien</strong> le coach : dans nos marques et nos discours par
-              l&apos;État français, les psychopraticiens sont apparus suite à l&apos;encadrement du
-              titre de psychothérapeute. Comme avec les coachs, il convient donc de vérifier que ces
-              professionnels indépendants aient bien suivi une formation les accompagnement
-              psychologique de personne.
+              <strong>Le psychopraticien</strong> A voir plutôt comme un coach, les psychopraticiens
+              ne sont pas reconnus ni réglementés par l&apos;État français. Le terme de
+              psychopraticien est d&apos;ailleurs apparu spécifiquement suite à l&apos;encadrement
+              strict du titre de psychothérapeute. L&apos;usage de ces appellations étant libre, il
+              est indispensable de vérifier que le professionnel indépendant que vous choisissez a
+              suivi une formation sérieuse et certifiée en accompagnement psychologique.
             </li>
           </ul>
         </div>
