@@ -58,6 +58,18 @@ export const Footer = () => {
               <li>
                 <Link href="/accessibilite">Accessibilité: Non conforme</Link>
               </li>
+              <li>
+                <a
+                  href="https://bff.ecoindex.fr/redirect/?url=https://carolinemagri.fr"
+                  target="_blank"
+                  className={styles.noUnderline}
+                >
+                  <img
+                    src="https://bff.ecoindex.fr/badge/?theme=light&url=https://carolinemagri.fr"
+                    alt="Ecoindex Badge"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
