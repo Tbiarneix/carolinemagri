@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import shared from "./shared.module.css";
 import { LinkCards, Theme } from "@/components/Cards/LinkCards/LinkCards";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
 import { Icon } from "@/components/Icon/Icon";
@@ -95,7 +96,7 @@ export default function Home() {
       <section className={styles.professional}>
         <h2>Présentation</h2>
         <div className={styles.professional__content}>
-          <div className={styles.professional__column}>
+          <div className={shared.contentBlock}>
             <h3>Mon parcours professionnel</h3>
             <p>
               Spécialisée dans le développement, je suis diplômée d&apos;un Master professionnel de
@@ -136,7 +137,7 @@ export default function Home() {
               personne, constitue à mon sens un point central de la prise en charge psychologique.
             </p>
           </div>
-          <div className={styles.professional__column}>
+          <div className={shared.contentBlock}>
             <h3>Le cabinet</h3>
             <p>
               Je reçois au sein de mon cabinet (libéral) des enfants, des adolescents et des
@@ -173,6 +174,7 @@ export default function Home() {
                 Code de Déontologie des Psychologues{" "}
                 <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
+              .
             </p>
             <p>
               Je travaille également avec d&apos;autres professionnels des communes avoisinantes :
@@ -183,7 +185,7 @@ export default function Home() {
       </section>
       <section className={styles.practice}>
         <h2>Ma pratique : La Psychologie du Développement</h2>
-        <div className={styles.practice__content}>
+        <div className={shared.contentBlock}>
           <p>
             La psychologie du développement s&apos;intéresse au développement de l&apos;individu de
             la naissance à l&apos;adolescence. L&apos;objet de la psychologie du développement

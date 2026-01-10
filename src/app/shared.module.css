@@ -31,6 +31,7 @@
 
 .contentBlock {
   background: var(--background-linear);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 2rem;
   margin-top: 2rem;

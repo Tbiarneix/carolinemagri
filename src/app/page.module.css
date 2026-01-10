@@ -80,13 +80,9 @@
   gap: 2rem;
 }
 
-.professional__column {
+.professional__content > * {
   flex: 1;
-  padding: 1.5rem;
-  border: 1px solid #777777;
-  border-radius: 12px;
-
-  background: var(--background-linear);
+  margin-top: 0;
 }
 
 .professional h2 {
@@ -99,15 +95,8 @@
   margin: 6rem auto;
 }
 
-.practice__content {
-  display: flex;
-  flex-direction: column;
-
-  padding: 1.5rem;
-  border: 1px solid #777777;
-  border-radius: 12px;
-
-  background: var(--background-linear);
+.practice > * {
+  margin-top: 0;
 }
 
 @media (max-width: 1024px) {
@@ -139,16 +128,8 @@
     gap: 1rem;
   }
 
-  .professional__column {
-    padding: 1rem 0.8rem;
-  }
-
   .practice {
     margin: 3rem auto;
-  }
-
-  .practice__content {
-    padding: 1rem 0.8rem;
   }
 
   .discovery__item {

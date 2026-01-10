@@ -87,7 +87,7 @@ export const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        © {currentYear} Caroline Magri - Tous droits réservés - Réalisation{" "}
+        © {currentYear} Caroline Magri, Psychologue à Pinsaguel - Tous droits réservés - Réalisation{" "}
         <Link
           href="https://www.thomasbiarneix.com/"
           target="_blank"
