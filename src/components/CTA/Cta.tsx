@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export const Cta = () => {
-  const [isCompactView, setIsCompactView] = useState(false);
+  // null = pas encore monté côté client, vue complète par défaut pendant SSR
+  const [isCompactView, setIsCompactView] = useState<boolean | null>(null);
 
   useEffect(() => {
     const checkSize = () => {
@@ -23,7 +24,7 @@ export const Cta = () => {
     <Link
       href="https://perfactive.fr/caroline-magri/book"
       className={styles.button}
-      aria-label={isCompactView ? "Prendre rendez-vous" : undefined}
+      aria-label={isCompactView === true ? "Prendre rendez-vous" : undefined}
       target="_blank"
     >
       <Icon name="calendar-plus" size={18} aria-hidden="true" />

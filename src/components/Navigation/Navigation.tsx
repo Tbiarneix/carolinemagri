@@ -9,7 +9,8 @@ import { usePathname } from "next/navigation";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  // null = pas encore monté côté client, valeur par défaut SSR-safe utilisée dans le rendu
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   const [ariaLabel, setAriaLabel] = useState("Ouvrir le menu");
   const menuRef = useRef<HTMLUListElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -63,6 +64,7 @@ export const Navigation = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
+    handleResize(); // Appel initial pour synchroniser l'état avec la taille réelle
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -89,7 +91,11 @@ export const Navigation = () => {
             width={136}
             height={50}
             sizes="(max-width: 1024px) 80px, 136px"
-            style={{ width: "auto", height: "auto", maxWidth: isMobile ? "80px" : "136px" }}
+            style={{
+              width: "auto",
+              height: "auto",
+              maxWidth: isMobile === true ? "80px" : "136px",
+            }}
           />
         </Link>
       </div>

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={AtkinsonHyperlegible.className}>
+      <body className={`${AtkinsonHyperlegible.variable} ${AtkinsonHyperlegible.className}`}>
         <header role="banner" id="main-header">
           <SkipLink />
           <Navigation />

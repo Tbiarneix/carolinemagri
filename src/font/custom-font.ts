@@ -14,4 +14,5 @@ export const AtkinsonHyperlegible = localFont({
     },
   ],
   display: "swap",
+  variable: "--font-atkinson",
 });
