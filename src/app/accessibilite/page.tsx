@@ -78,6 +78,7 @@ export default function AccessibilitePage() {
               href="https://formulaire.defenseurdesdroits.fr/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Défenseur des droits, site officiel - Nouvel onglet"
             >
               Défenseur des droits <Icon name="external-link" size={16} aria-hidden="true" />
             </Link>
@@ -88,6 +89,7 @@ export default function AccessibilitePage() {
               href="https://www.defenseurdesdroits.fr/saisir/delegues"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Défenseur des droits, site officiel - Nouvel onglet"
             >
               Défenseur des droits dans votre région{" "}
               <Icon name="external-link" size={16} aria-hidden="true" />

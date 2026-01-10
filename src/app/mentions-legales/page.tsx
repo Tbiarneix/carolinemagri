@@ -68,6 +68,7 @@ export default function MentionsLegalesPage() {
                 href="https://www.thomasbiarneix.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Thomas Biarneix, site personnel - Nouvel onglet"
               >
                 Thomas Biarneix <Icon name="external-link" size={16} aria-hidden="true" />
               </Link>

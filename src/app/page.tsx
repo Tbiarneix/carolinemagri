@@ -103,8 +103,13 @@ export default function Home() {
               l&apos;Université de Basse Normandie à Caen. Je suis également diplômée en Sophrologie
               et inscrit au Répertoire National des Certifications professionnelles.
               <br />
-              <a href="http://www.cncp.gouv.fr/" target="_blank" rel="noopener noreferrer">
-                http://www.cncp.gouv.fr/ <Icon name="external-link" size={16} aria-hidden="true" />
+              <a
+                href="http://www.cncp.gouv.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CNCP, site officiel - Nouvel onglet"
+              >
+                cncp.gouv.fr <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
             </p>
             <p>
@@ -144,26 +149,28 @@ export default function Home() {
               adolescents) et un suivi sophrologique.
             </p>
             <p>
-              En tant que membre du Registre de Santé, mon numéro RPPS est le 10009652727.
-              <br />
+              En tant que membre du Registre de Santé, mon numéro RPPS est le 10009652727.Vous
+              retrouverez toutes ces informations sur ma fiche professionnelle sur le site de l'{""}
               <a
-                href="https://www.occitanie.ars.sante.fr/"
+                href="https://annuaire.esante.gouv.fr/pp/detail/10009652727?exeProId=5845577"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Agence du numérique de la Santé, site officiel - Nouvel onglet"
               >
-                https://www.occitanie.ars.sante.fr/{" "}
+                Agence du numérique de la santé{" "}
                 <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
+              .
             </p>
             <p>
-              Je travaille dans le respect du Code de Déontologie des Psychologues.
-              <br />
+              Je travaille dans le respect du{" "}
               <a
                 href="http://www.codededeontologiedespsychologues.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Code de Déontologie des Psychologues, site officiel - Nouvel onglet"
               >
-                http://www.codededeontologiedespsychologues.fr/{" "}
+                Code de Déontologie des Psychologues{" "}
                 <Icon name="external-link" size={16} aria-hidden="true" />
               </a>
             </p>

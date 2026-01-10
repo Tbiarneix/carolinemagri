@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import { Icon } from "@/components/Icon/Icon";
+import { Button } from "../Button/Button";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -59,10 +60,20 @@ export const Footer = () => {
                 <Link href="/accessibilite">Accessibilité: Non conforme</Link>
               </li>
               <li>
+                <Link
+                  href="https://perfactive.fr/caroline-magri/book"
+                  target="_blank"
+                  aria-label="Prendre rendez-vous - Nouvel onglet"
+                >
+                  Prendre rendez-vous <Icon name="external-link" size={16} aria-hidden="true" />
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://bff.ecoindex.fr/redirect/?url=https://carolinemagri.fr"
                   target="_blank"
                   className={styles.noUnderline}
+                  aria-label="Analyse Ecoindex - Nouvel onglet"
                 >
                   <img
                     src="https://bff.ecoindex.fr/badge/?theme=light&url=https://carolinemagri.fr"
@@ -77,7 +88,12 @@ export const Footer = () => {
 
       <div className={styles.copyright}>
         © {currentYear} Caroline Magri - Tous droits réservés - Réalisation{" "}
-        <Link href="https://www.thomasbiarneix.com/" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://www.thomasbiarneix.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Thomas Biarneix, site personnel - Nouvel onglet"
+        >
           Thomas Biarneix <Icon name="external-link" size={16} aria-hidden="true" />
         </Link>{" "}
         -{" "}
@@ -85,6 +101,7 @@ export const Footer = () => {
           href="https://annuaire.esante.gouv.fr/pp/detail/10009652727?exeProId=5845577"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Numéro RPPS, fiches d'information - Nouvel onglet"
         >
           Numéro RPPS 10009652727 <Icon name="external-link" size={16} aria-hidden="true" />
         </Link>

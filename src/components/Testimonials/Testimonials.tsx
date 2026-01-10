@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback } from "react";
 import styles from "./Testimonials.module.css";
 import testimonialData from "@/data/testimonials.json";
-import Link from "next/link";
+import { Button } from "@/components/Button/Button";
 import { Icon } from "@/components/Icon/Icon";
 
 const StarRating = ({ rating }: { rating: number }) => {
@@ -136,16 +136,15 @@ export const Testimonials = () => {
           <StarRating rating={testimonialData.averageRating} />
           <span>{testimonialData.averageRating}/5</span>
         </div>
-        <Link
+        <Button
           href={testimonialData.googleReviewUrl}
           target="_blank"
-          rel="noopener noreferrer"
-          className={styles.google_link}
-          aria-label="Voir tous les avis sur Google"
+          variant="outline"
+          ariaLabel="Voir tous les avis sur Google"
         >
           Voir tous les avis sur Google
           <Icon name="external-link" />
-        </Link>
+        </Button>
       </footer>
     </section>
   );

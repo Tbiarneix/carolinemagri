@@ -2,7 +2,7 @@
 
 import styles from "./Cta.module.css";
 import { Icon } from "@/components/Icon/Icon";
-import Link from "next/link";
+import { Button } from "@/components/Button/Button";
 import { useEffect, useState } from "react";
 
 export const Cta = () => {
@@ -21,14 +21,15 @@ export const Cta = () => {
   }, []);
 
   return (
-    <Link
+    <Button
       href="https://perfactive.fr/caroline-magri/book"
-      className={styles.button}
-      aria-label={isCompactView === true ? "Prendre rendez-vous" : undefined}
       target="_blank"
+      rounded
+      ariaLabel={isCompactView === true ? "Prendre rendez-vous" : undefined}
+      className={styles.ctaButton}
     >
       <Icon name="calendar-plus" size={18} aria-hidden="true" />
       <span className={styles.buttonText}>Prendre rendez-vous</span>
-    </Link>
+    </Button>
   );
 };

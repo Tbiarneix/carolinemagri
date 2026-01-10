@@ -151,14 +151,16 @@ export default function HonorairesContactPage() {
         <h2>Prendre rendez-vous</h2>
         <div className={shared.contentBlock}>
           <p>
-            Vous pouvez prendre rendez-vous sur ma page Perfactive{" "}
+            Vous pouvez prendre rendez-vous sur ma page{" "}
             <a
               href="https://perfactive.fr/caroline-magri/book"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Perfactive - Nouvel onglet"
             >
-              https://perfactive.fr/ <Icon name="external-link" size={16} aria-hidden="true" />
+              Perfactive <Icon name="external-link" size={16} aria-hidden="true" />
             </a>
+            .
           </p>
         </div>
       </section>

@@ -108,7 +108,9 @@
 }
 
 .mapLink:hover .mapOverlay {
-  background: var(--pastel-medium);
+  background: white;
+  color: var(--pastel-dark);
+  border: 1px solid var(--pastel-dark);
 }
 
 .contactItem p {
