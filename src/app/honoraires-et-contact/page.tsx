@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import shared from "../shared.module.css";
 import { InfoCards } from "@/components/Cards/InfoCards/InfoCards";
-import { ExternalLink } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -67,7 +67,7 @@ export default function HonorairesContactPage() {
           Je ne suis <b>pas conventionnée Mon Parcours Psy</b> (parcours gouvernemental). Pour en
           comprendre les raisons (si vous le souhaitez), je vous invite à lire{" "}
           <a href="https://associationm3p-psychologues.fr/une-escroquerie-nommee-monpsy-article-du-co-dirigeant-de-lassociation-m3p-lionel-camalet/">
-            cet article <ExternalLink size={16} aria-hidden="true" />
+            cet article <Icon name="external-link" size={16} aria-hidden="true" />
           </a>
           .
         </p>
@@ -110,7 +110,7 @@ export default function HonorairesContactPage() {
               <h3>Téléphone</h3>
               <p>
                 <a href="tel:0562486421">
-                  05.62.48.64.21 <ExternalLink size={16} aria-hidden="true" />
+                  05.62.48.64.21 <Icon name="external-link" size={16} aria-hidden="true" />
                 </a>
               </p>
             </div>
@@ -118,7 +118,8 @@ export default function HonorairesContactPage() {
               <h3>Email</h3>
               <p>
                 <a href="mailto:magri.caroline@gmail.com">
-                  magri.caroline@gmail.com <ExternalLink size={16} aria-hidden="true" />
+                  magri.caroline@gmail.com{" "}
+                  <Icon name="external-link" size={16} aria-hidden="true" />
                 </a>
               </p>
             </div>
@@ -138,7 +139,7 @@ export default function HonorairesContactPage() {
                 style={{ objectFit: "cover" }}
               />
               <span className={styles.mapOverlay}>
-                <ExternalLink size={18} aria-hidden="true" />
+                <Icon name="external-link" size={18} aria-hidden="true" />
                 Ouvrir dans Google Maps
               </span>
             </a>
@@ -156,7 +157,7 @@ export default function HonorairesContactPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://perfactive.fr/ <ExternalLink size={16} aria-hidden="true" />
+              https://perfactive.fr/ <Icon name="external-link" size={16} aria-hidden="true" />
             </a>
           </p>
         </div>

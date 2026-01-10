@@ -4,7 +4,7 @@ import { useRef, useState, useCallback } from "react";
 import styles from "./Testimonials.module.css";
 import testimonialData from "@/data/testimonials.json";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Icon } from "@/components/Icon/Icon";
 
 const StarRating = ({ rating }: { rating: number }) => {
   return (
@@ -91,7 +91,7 @@ export const Testimonials = () => {
           disabled={!canScrollLeft}
           aria-label="Voir les avis précédents"
         >
-          <ChevronLeft aria-hidden="true" />
+          <Icon name="chevron-left" aria-hidden="true" />
         </button>
         <button
           onClick={() => handleManualScroll("right")}
@@ -99,7 +99,7 @@ export const Testimonials = () => {
           disabled={!canScrollRight}
           aria-label="Voir les avis suivants"
         >
-          <ChevronRight aria-hidden="true" />
+          <Icon name="chevron-right" aria-hidden="true" />
         </button>
       </div>
       <ul
@@ -144,7 +144,7 @@ export const Testimonials = () => {
           aria-label="Voir tous les avis sur Google"
         >
           Voir tous les avis sur Google
-          <ExternalLink />
+          <Icon name="external-link" />
         </Link>
       </footer>
     </section>

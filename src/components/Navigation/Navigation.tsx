@@ -86,8 +86,10 @@ export const Navigation = () => {
           <Image
             src="/images/logo-text-bicolor.webp"
             alt="Logo de Caroline Magri"
-            width={isMobile ? 80 : 136}
-            height={isMobile ? 30 : 50}
+            width={136}
+            height={50}
+            sizes="(max-width: 1024px) 80px, 136px"
+            style={{ width: "auto", height: "auto", maxWidth: isMobile ? "80px" : "136px" }}
           />
         </Link>
       </div>
