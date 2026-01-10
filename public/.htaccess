@@ -3,6 +3,13 @@
 # Optimisations Eco-Index
 # =============================================
 
+# Redirection non-www vers www (résout les 404 sur les assets)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^carolinemagri\.fr$ [NC]
+  RewriteRule ^(.*)$ https://www.carolinemagri.fr/$1 [R=301,L]
+</IfModule>
+
 # Activer la compression GZIP
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html
