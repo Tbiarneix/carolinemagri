@@ -4,6 +4,7 @@ import { InfoCards } from "@/components/Cards/InfoCards/InfoCards";
 import { Icon } from "@/components/Icon/Icon";
 import { Metadata } from "next";
 import Image from "next/image";
+import { Alert } from "@/components/Alert/Alert";
 
 export const metadata: Metadata = {
   title: "Honoraires et Contact",
@@ -92,6 +93,8 @@ export default function HonorairesContactPage() {
           N&apos;hésitez pas à vous renseigner auprès de votre mutuelle.
         </p>
       </section>
+
+      <Alert />
 
       <section id="contact">
         <h2>Contact</h2>

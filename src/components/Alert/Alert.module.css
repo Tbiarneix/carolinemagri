@@ -1,0 +1,32 @@
+.alert {
+  max-width: 1200px;
+  margin: 6rem auto 0;
+  border: 1rem solid var(--warning);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.alert h2 {
+  text-align: center;
+}
+
+.alert h2::after {
+  display: none;
+}
+
+.alert span {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .alert {
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    border-width: 0.5rem;
+  }
+
+  .alert h2 {
+    margin-top: 0;
+  }
+}

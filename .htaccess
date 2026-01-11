@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+
+ # Redirige tout vers le sous-domaine www
+ RewriteCond %{HTTP_HOST} !^www\.carolinemagri\.fr$ [NC]
+ RewriteRule ^(.*)$ https://www.carolinemagri.fr/$1 [R=301,L]
+</IfModule>
+
+PassengerAppRoot /home/u122709324/domains/carolinemagri.fr/public_html
+PassengerAppType node
+PassengerNodejs /opt/alt/alt-nodejs22/root/bin/node
+PassengerStartupFile server.js
+PassengerBaseURI /

@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import shared from "./shared.module.css";
 import { LinkCards, Theme } from "@/components/Cards/LinkCards/LinkCards";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
+import { Alert } from "@/components/Alert/Alert";
 import { Icon } from "@/components/Icon/Icon";
 import Image from "next/image";
 
@@ -42,6 +43,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Alert />
 
       <section className={styles.discovery}>
         <h2>Découvrir</h2>

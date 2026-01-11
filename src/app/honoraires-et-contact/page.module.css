@@ -126,6 +126,7 @@
 @media (max-width: 768px) {
   .tarifs {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .contactSection {
