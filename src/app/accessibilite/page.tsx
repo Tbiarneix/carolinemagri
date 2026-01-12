@@ -23,13 +23,17 @@ export default function AccessibilitePage() {
       <section>
         <h2>État de conformité</h2>
         <p>
-          Le site carolinemagri.fr est <strong>non conforme</strong> avec le référentiel général
-          d&apos;amélioration de l&apos;accessibilité (RGAA) version 4.1.
+          Le site n&apos;a pas encore fait l&apos;objet d&apos;un audit d&apos;accessibilité et est
+          donc considéré <strong>non conforme</strong>.
         </p>
-        <p>Le site n&apos;a pas encore fait l&apos;objet d&apos;un audit d&apos;accessibilité.</p>
+        <p>
+          Le site carolinemagri.fr est <strong>non conforme</strong> avec le référentiel général
+          d&apos;amélioration de l&apos;accessibilité (RGAA) version 4.1.2.
+        </p>
         <p>
           Cependant, le site a été développé en tenant compte des meilleures pratiques pour assurer
-          une accessibilité optimale.
+          une accessibilité optimale en suivant les 106 critères du référentiel général
+          d&apos;amélioration de l&apos;accessibilité (RGAA) version 4.1.2.
         </p>
       </section>
 

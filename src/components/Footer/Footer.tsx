@@ -57,7 +57,7 @@ export const Footer = () => {
                 <Link href="/politique-de-confidentialite">Données personnelles et cookies</Link>
               </li>
               <li>
-                <Link href="/accessibilite">Accessibilité: Non conforme</Link>
+                <Link href="/accessibilite">Accessibilité</Link>
               </li>
               <li>
                 <Link

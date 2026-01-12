@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.practice}>
-        <h2>Ma pratique : La Psychologie du Développement</h2>
+        <h2>Ma pratique : la psychologie du développement</h2>
         <div className={shared.contentBlock}>
           <p>
             La psychologie du développement s&apos;intéresse au développement de l&apos;individu de
